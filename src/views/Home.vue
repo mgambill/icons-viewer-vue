@@ -31,7 +31,7 @@ div
         IconCard(:icon="icon" :key="icon.title" :type="iconType")
 
 
-    p.text-sm
+    p.text-sm.py-8.text-center
       | Viewer inspired by  
       a.text-indigo-500(href="https://heroicons-viewer.netlify.com/" target="_blank" noreferral class='hover:underline') Zaydek Michels-Gualtieri 
       span.emoji 👋      

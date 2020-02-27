@@ -6,7 +6,7 @@ div(class="w-full sm:w-1/4 md:w-1/5 xl:w-1/6")
         component(:is="`${type}${icon.icon}`" ref="s")
         textarea(v-show="false") {{ markup }}
       div.p-3.absolute.x-inset-0.bottom-0
-        p.font-semibold.text-center.text-xs.leading-tight {{ icon.title }}  
+        p.font-semibold.text-center.text-xs.leading-tight {{ title }}  
 </template>
 
 <script>
@@ -16,24 +16,22 @@ export default {
     type: String
   },
   data() {
-    return { markup: null };
+    return { markup: null, title: this.icon.title };
   },
   methods: {
     async doCopy() {
       try {
-        console.log(this.$el);
-        const e = await this.$copyText(this.markup, this.$el);
-        alert("Copied");
-        console.log(e);
+        this.title = "COPIED";
+        await this.$copyText(this.markup, this.$el);
+        setTimeout(() => (this.title = this.icon.title), 1000);
       } catch (err) {
-        console.log(err);
+        console.error(err);
       }
     }
   },
   mounted() {
     this.$nextTick(() => {
       this.markup = this.$el.querySelector("svg").outerHTML;
-      // this.markup = this.$refs.s.$el.innerHTML;
     });
   }
 };
