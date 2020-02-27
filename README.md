@@ -6,3 +6,5 @@
 This is a WIP frontend for the newly released [Heroicons iconset](https://github.com/refactoringui/heroicons) by RefactoringUI/Adam Wathan/Steve Schoger.
 
 **Contributes are welcome!** Built using Vue and Tailwind CSS.
+
+Initial idea from: https://github.com/codex-src/heroicons-viewer
