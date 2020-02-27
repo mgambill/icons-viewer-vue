@@ -1,24 +1,8 @@
-# heroicons-viewer-vue
+# Heroicons viewer
 
-## Project setup
-```
-npm install
-```
+👉 https://heroicons-viewer.nmyvsn.net<br />
+👉 https://github.com/refactoringui/heroicons
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This is a WIP frontend for the newly released [Heroicons iconset](https://github.com/refactoringui/heroicons) by RefactoringUI/Adam Wathan/Steve Schoger.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+**Contributes are welcome!** Built using Vue and Tailwind CSS.

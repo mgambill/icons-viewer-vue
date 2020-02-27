@@ -8,24 +8,32 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@nmyvision/heroicons-vue": "../heroicons-vue",
     "core-js": "^3.6.4",
+    "lodash.kebabcase": "^4.1.1",
+    "tailwindcss": "^1.2.0",
     "vue": "^2.6.11",
+    "vue-clipboard2": "^0.3.1",
     "vue-router": "^3.1.5"
   },
   "devDependencies": {
+    "@tailwindcss/ui": "^0.1.2",
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-plugin-router": "~4.2.0",
     "@vue/cli-service": "~4.2.0",
     "@vue/eslint-config-prettier": "^6.0.0",
+    "autoprefixer": "^9.7.4",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.1.2",
     "lint-staged": "^9.5.0",
+    "lodash.startcase": "^4.4.0",
     "prettier": "^1.19.1",
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
+    "vue-cli-plugin-pug": "~1.0.7",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -41,7 +49,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-debugger": "warn"
+    }
   },
   "browserslist": [
     "> 1%",
