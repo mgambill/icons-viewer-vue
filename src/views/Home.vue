@@ -17,7 +17,7 @@
               //- Moon icon
               svg( viewBox="0 0 20 20" fill="currentColor")
                 path( d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z")
-      h1.font-semibold.tracking-tight.text-5xl.text-gray-200 Heroicons previewer
+      h1.font-semibold.tracking-tight.text-5xl.text-gray-200 Heroicons
        
       h2.mb-2.font-light.text.text-gray-100(class='-tracking-0.5')
         | MIT-licensed, 
