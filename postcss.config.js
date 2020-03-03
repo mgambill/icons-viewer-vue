@@ -2,7 +2,7 @@ console.log(process.env.NODE_ENV === "production");
 module.exports = {
   plugins: [
     require("tailwindcss"),
-    require("autoprefixer"),
+    process.env.NODE_ENV === "production" ? require("autoprefixer") : null,
     process.env.NODE_ENV === "production" &&
       require("@fullhuman/postcss-purgecss")({
         content: [`./public/**/*.html`, `./src/**/*.vue`],
@@ -14,7 +14,8 @@ module.exports = {
         whitelistPatterns: [
           /-(leave|enter|appear)(|-(to|from|active))$/,
           /^(?!(|.*?:)cursor-move).+-move$/,
-          /^router-link(|-exact)-active$/
+          /^router-link(|-exact)-active$/,
+          /^w-|^h-/
         ]
       })
   ]

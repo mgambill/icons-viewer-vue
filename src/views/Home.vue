@@ -60,9 +60,8 @@
                 | Stroke:
             select#icon_size.form-input.block.w-full.pl-20(class="form-input block w-full pl-10 pr-8 sm:text-sm sm:leading-5" :class="[isDark? 'bg-cool-gray-700 text-cool-gray-100' : 'bg-white']" v-model.number="iconStrokeWidth") 
               template(v-for="(key, $index) in strokeWidths")
-             
                 option {{ key }}
-        
+
 
 
     template(v-if="filteredIcons")
