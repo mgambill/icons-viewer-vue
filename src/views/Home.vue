@@ -83,7 +83,7 @@
     
       div
         span() Viewer inspired by  
-        a(href="https://heroicons-viewer.netlify.com/" target="_blank" rel="noreferrer" class='hover:underline' :class="[isDark ? 'text-indigo-300': 'text-indigo-600' ]") Zaydek Michels-Gualtieri 
+        a(href="https://heroicons.dev" target="_blank" rel="noreferrer" class='hover:underline' :class="[isDark ? 'text-indigo-300': 'text-indigo-600' ]") Zaydek Michels-Gualtieri 
         span.emoji 👋      
 </template>
 
