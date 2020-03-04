@@ -29,18 +29,21 @@
 
   .container.mx-auto(class="md:px-3 xl:px-0") 
     .flex.w-full
-      .mt-1.relative.rounded-md.shadow-sm.flex-1
-        .absolute.inset-y-0.left-0.pl-3.flex.items-center.pointer-events-none
-          svg.h-5.w-5.text-gray-400(fill="none" viewBox="0 0 24 24" stroke="currentColor")              
-            path( stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z")
-        label.sr-only(for="filter") Search Icons
-        input#filter(class='form-input block w-full pl-10 pr-12 sm:text-sm sm:leading-5' :class="[isDark? 'bg-cool-gray-700 text-cool-gray-100' : 'bg-white']"  placeholder='Search icons' v-model="filterText")
+      div.flex-1
+        .mt-1.flex.rounded-md.shadow-sm
+          .relative.flex-grow(class='focus-within:z-10')
+            .absolute.inset-y-0.left-0.pl-3.flex.items-center.pointer-events-none
+              svg.h-5.w-5.text-gray-400(fill="none" viewBox="0 0 24 24" stroke="currentColor")              
+                path( stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z")            
+            label.sr-only(for="filter") Search Icons
+            input#filter.form-input.block.w-full.rounded-none.rounded-l-md.pl-10.transition.ease-in-out.duration-150(class='sm:text-sm sm:leading-5' placeholder='Search icons')
+          button.-ml-px.w-28.relative.inline-flex.items-center.px-3.py-2.border.border-gray-300.text-sm.leading-5.font-medium.rounded-r-md.text-gray-700.bg-white.transition.ease-in-out.duration-150(class='hover:text-gray-500 hover:bg-white focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700' @click="toggleIconType")
+            div.flex.justify-between
+              span.ml-2 {{ iconType }}
+              div
+                svg.w-5.h-5(viewBox='0 0 20 20', fill='currentColor', strokewidth='2')
+                  path(d='M5 12a1 1 0 102 0V6.414l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L5 6.414V12zM15 8a1 1 0 10-2 0v5.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L15 13.586V8z')
 
-        .absolute.inset-y-0.right-0.flex.items-center
-          select( aria-label="Currency" v-model="iconType" class="form-select h-full py-0 pl-2 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm sm:leading-5")
-            option Outline
-            option Solid
-        
       .mt-1.ml-4
           label.sr-only(for='icon_size') Icon Size
           .relative.rounded-md.shadow-sm
@@ -265,6 +268,9 @@ export default {
     },
     clearState() {
       clearState();
+    },
+    toggleIconType() {
+      this.iconType = this.isSolid ? "Outline" : "Solid";
     }
   },
   mounted() {

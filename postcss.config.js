@@ -1,4 +1,3 @@
-console.log(process.env.NODE_ENV === "production");
 module.exports = {
   plugins: [
     require("tailwindcss"),
@@ -8,7 +7,7 @@ module.exports = {
         content: [`./public/**/*.html`, `./src/**/*.vue`],
         defaultExtractor(content) {
           const contentWithoutStyleBlocks = content.replace(/<style[^]+?<\/style>/gi, "");
-          return contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) || [];
+          return contentWithoutStyleBlocks.match(/[\w-/.:]+(?<!:)]/g) || [];
         },
         whitelist: [],
         whitelistPatterns: [
