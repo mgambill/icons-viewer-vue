@@ -36,13 +36,14 @@
               svg.h-5.w-5.text-gray-400(fill="none" viewBox="0 0 24 24" stroke="currentColor")              
                 path( stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z")            
             label.sr-only(for="filter") Search Icons
-            input#filter.form-input.block.w-full.rounded-none.rounded-l-md.pl-10.transition.ease-in-out.duration-150(class='sm:text-sm sm:leading-5' placeholder='Search icons')
+            input#filter.form-input.block.w-full.rounded-none.rounded-l-md.pl-10.transition.ease-in-out.duration-150(class='sm:text-sm sm:leading-5' placeholder='Search icons' v-model="filterText")
+          
           button.-ml-px.w-28.relative.inline-flex.items-center.px-3.py-2.border.border-gray-300.text-sm.leading-5.font-medium.rounded-r-md.text-gray-700.bg-white.transition.ease-in-out.duration-150(class='hover:text-gray-500 hover:bg-white focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700' @click="toggleIconType")
-            div.flex.justify-between
+            div.w-full.flex.justify-between
               span.ml-2 {{ iconType }}
-              div
-                svg.w-5.h-5(viewBox='0 0 20 20', fill='currentColor', strokewidth='2')
-                  path(d='M5 12a1 1 0 102 0V6.414l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L5 6.414V12zM15 8a1 1 0 10-2 0v5.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L15 13.586V8z')
+              svg.w-5.h-5.text-gray-400(fill='none', viewBox='0 0 24 24', stroke='currentColor', strokewidth='1')
+                path(stroke-linecap='round', stroke-linejoin='round', stroke-width='1', d='M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4')
+
 
       .mt-1.ml-4
           label.sr-only(for='icon_size') Icon Size
@@ -69,7 +70,7 @@
     template(v-if="filteredIcons")
       div(class="flex flex-wrap  -mx-2 mt-2")
         template( v-for="icon in filteredIcons")
-          IconCard(:icon="icon" :key="icon.title" :type="iconType" :is-dark="isDark" :icon-size="iconSize" :icon-stroke-width="iconStrokeWidth")
+          IconCard(:icon="icon" :key="`${icon.title}--${iconType}`" :type="iconType" :is-dark="isDark" :icon-size="iconSize" :icon-stroke-width="iconStrokeWidth")
 
     template(v-else)
       div.flex.h-48.items-center.justify-center.mt-4.w-full
