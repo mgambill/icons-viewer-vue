@@ -1,5 +1,5 @@
 <template lang="pug">
-div(:class="[iconSize < 24 ? 'w-full sm:w-1/4 md:w-1/5 xl:w-1/6' : 'w-1/4' ]")
+div(:class="[iconSize < 24 ? 'w-full sm:w-1/4 md:w-1/5 xl:w-1/6' : iconSize < 48 ? 'w-1/4' : 'w-1/3' ]")
   div(class="m-2")
     a(href="" :class="[isDark? 'bg-cool-gray-700 text-cool-gray-100' : 'bg-white' , iconSize < 32 ? 'h-40' : iconSize < 56 ?' h-64' : 'h-80' ]" class="relative flex-shrink-0 flex flex-col justify-center items-center w-full text-gray-800 hover:text-white  hover:bg-indigo-500 rounded shadow hover:shadow-lg hover:z-30 transition duration-150 ease-in-out"  @click.prevent="doCopy")
       div()
