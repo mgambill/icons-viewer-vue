@@ -10,13 +10,15 @@ div(:class="[iconSize < 24 ? 'w-full sm:w-1/4 md:w-1/5 xl:w-1/6' : iconSize < 48
 </template>
 
 <script>
+import { Parser, defaultOptions } from "@nmyvision/html2pug";
 export default {
   props: {
     icon: Object,
     type: String,
     isDark: Boolean,
     iconSize: Number,
-    iconStrokeWidth: Number
+    iconStrokeWidth: Number,
+    usePug: Boolean
   },
   data() {
     return { markup: null, title: this.icon.title };
@@ -33,8 +35,11 @@ export default {
     }
   },
   mounted() {
+    const options = Object.assign({}, defaultOptions, { collapse: false });
+    const p = new Parser(options);
     this.$nextTick(() => {
-      this.markup = this.$el.querySelector("svg").outerHTML;
+      const m = this.$el.querySelector("svg").outerHTML;
+      this.markup = this.usePug ? p.parse(m) : m;
     });
   }
 };

@@ -4,19 +4,24 @@ const STORAGE_KEY = "IconState";
 
 export const clearState = () => {
   localStorage.removeItem(STORAGE_KEY);
+  state.hasState = false;
 };
 
 const saveState = () => {
-  const { iconType, iconSize, iconStrokeWidth, isDark } = state;
-  localStorage.setItem(
-    STORAGE_KEY,
-    JSON.stringify({
-      iconType,
-      iconSize,
-      iconStrokeWidth,
-      isDark
-    })
-  );
+  if (state.useLocalStorage) {
+    const { iconType, iconSize, iconStrokeWidth, isDark, usePug } = state;
+    state.hasState = true;
+    localStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify({
+        iconType,
+        iconSize,
+        iconStrokeWidth,
+        isDark,
+        usePug
+      })
+    );
+  }
 };
 
 const loadState = o => {
@@ -25,6 +30,7 @@ const loadState = o => {
   if (json) {
     o.loaded = true;
     Object.assign(o, JSON.parse(json));
+    o.hasState = true;
   }
 };
 
@@ -32,7 +38,10 @@ const state = Vue.observable({
   iconType: "Solid",
   iconSize: 5,
   iconStrokeWidth: 2,
-  isDark: false
+  isDark: false,
+  usePug: false,
+  useLocalStorage: true,
+  hasState: false
 });
 
 export const mapCache = (...args) => {
