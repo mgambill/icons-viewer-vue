@@ -1,12 +1,10 @@
 export const AdjustmentsIcon = {
   name: "AdjustmentsIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
         <path
-          foo={ctx.data}
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width={ctx.props.strokeWidth || 1}
@@ -16,10 +14,10 @@ export const AdjustmentsIcon = {
     );
   }
 };
+
 export const AnnotationIcon = {
   name: "AnnotationIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -33,10 +31,10 @@ export const AnnotationIcon = {
     );
   }
 };
+
 export const ArchiveIcon = {
   name: "ArchiveIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -50,10 +48,10 @@ export const ArchiveIcon = {
     );
   }
 };
+
 export const ArrowCircleDownIcon = {
   name: "ArrowCircleDownIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -67,10 +65,10 @@ export const ArrowCircleDownIcon = {
     );
   }
 };
+
 export const ArrowCircleLeftIcon = {
   name: "ArrowCircleLeftIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -84,10 +82,10 @@ export const ArrowCircleLeftIcon = {
     );
   }
 };
+
 export const ArrowCircleRightIcon = {
   name: "ArrowCircleRightIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -101,10 +99,10 @@ export const ArrowCircleRightIcon = {
     );
   }
 };
+
 export const ArrowCircleUpIcon = {
   name: "ArrowCircleUpIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -118,10 +116,10 @@ export const ArrowCircleUpIcon = {
     );
   }
 };
+
 export const ArrowDownIcon = {
   name: "ArrowDownIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -135,10 +133,10 @@ export const ArrowDownIcon = {
     );
   }
 };
+
 export const ArrowLeftIcon = {
   name: "ArrowLeftIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -152,10 +150,10 @@ export const ArrowLeftIcon = {
     );
   }
 };
+
 export const ArrowNarrowDownIcon = {
   name: "ArrowNarrowDownIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -169,10 +167,10 @@ export const ArrowNarrowDownIcon = {
     );
   }
 };
+
 export const ArrowNarrowLeftIcon = {
   name: "ArrowNarrowLeftIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -186,10 +184,10 @@ export const ArrowNarrowLeftIcon = {
     );
   }
 };
+
 export const ArrowNarrowRightIcon = {
   name: "ArrowNarrowRightIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -203,10 +201,10 @@ export const ArrowNarrowRightIcon = {
     );
   }
 };
+
 export const ArrowNarrowUpIcon = {
   name: "ArrowNarrowUpIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -220,10 +218,10 @@ export const ArrowNarrowUpIcon = {
     );
   }
 };
+
 export const ArrowRightIcon = {
   name: "ArrowRightIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -237,10 +235,10 @@ export const ArrowRightIcon = {
     );
   }
 };
+
 export const ArrowUpIcon = {
   name: "ArrowUpIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -254,10 +252,10 @@ export const ArrowUpIcon = {
     );
   }
 };
+
 export const AtSymbolIcon = {
   name: "AtSymbolIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -271,10 +269,44 @@ export const AtSymbolIcon = {
     );
   }
 };
+
+export const BadgeCheckIcon = {
+  name: "BadgeCheckIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width={ctx.props.strokeWidth || 1}
+          d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+        />
+      </svg>
+    );
+  }
+};
+
+export const BanIcon = {
+  name: "BanIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width={ctx.props.strokeWidth || 1}
+          d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"
+        />
+      </svg>
+    );
+  }
+};
+
 export const BellIcon = {
   name: "BellIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -288,10 +320,10 @@ export const BellIcon = {
     );
   }
 };
+
 export const BookOpenIcon = {
   name: "BookOpenIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -305,10 +337,10 @@ export const BookOpenIcon = {
     );
   }
 };
+
 export const BookmarkIcon = {
   name: "BookmarkIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -322,10 +354,10 @@ export const BookmarkIcon = {
     );
   }
 };
+
 export const BriefcaseIcon = {
   name: "BriefcaseIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -339,10 +371,10 @@ export const BriefcaseIcon = {
     );
   }
 };
+
 export const CalendarIcon = {
   name: "CalendarIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -356,10 +388,10 @@ export const CalendarIcon = {
     );
   }
 };
+
 export const CameraIcon = {
   name: "CameraIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -379,10 +411,10 @@ export const CameraIcon = {
     );
   }
 };
+
 export const CashIcon = {
   name: "CashIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -396,10 +428,10 @@ export const CashIcon = {
     );
   }
 };
+
 export const ChartPieIcon = {
   name: "ChartPieIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -419,10 +451,27 @@ export const ChartPieIcon = {
     );
   }
 };
+
+export const ChatAltIcon = {
+  name: "ChatAltIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width={ctx.props.strokeWidth || 1}
+          d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+        />
+      </svg>
+    );
+  }
+};
+
 export const ChatIcon = {
   name: "ChatIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -436,10 +485,10 @@ export const ChatIcon = {
     );
   }
 };
+
 export const CheckCircleIcon = {
   name: "CheckCircleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -453,10 +502,10 @@ export const CheckCircleIcon = {
     );
   }
 };
+
 export const CheckIcon = {
   name: "CheckIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -470,10 +519,10 @@ export const CheckIcon = {
     );
   }
 };
+
 export const CheveronDownIcon = {
   name: "CheveronDownIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -487,10 +536,10 @@ export const CheveronDownIcon = {
     );
   }
 };
+
 export const CheveronLeftIcon = {
   name: "CheveronLeftIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -504,10 +553,10 @@ export const CheveronLeftIcon = {
     );
   }
 };
+
 export const CheveronRightIcon = {
   name: "CheveronRightIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -521,10 +570,10 @@ export const CheveronRightIcon = {
     );
   }
 };
+
 export const CheveronUpIcon = {
   name: "CheveronUpIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -538,10 +587,10 @@ export const CheveronUpIcon = {
     );
   }
 };
+
 export const ClipboardCheckIcon = {
   name: "ClipboardCheckIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -555,10 +604,10 @@ export const ClipboardCheckIcon = {
     );
   }
 };
+
 export const ClipboardCopyIcon = {
   name: "ClipboardCopyIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -572,10 +621,10 @@ export const ClipboardCopyIcon = {
     );
   }
 };
+
 export const ClipboardListIcon = {
   name: "ClipboardListIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -589,10 +638,10 @@ export const ClipboardListIcon = {
     );
   }
 };
+
 export const ClipboardIcon = {
   name: "ClipboardIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -606,10 +655,10 @@ export const ClipboardIcon = {
     );
   }
 };
+
 export const ClockIcon = {
   name: "ClockIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -623,10 +672,10 @@ export const ClockIcon = {
     );
   }
 };
+
 export const CloudDownloadIcon = {
   name: "CloudDownloadIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -640,10 +689,10 @@ export const CloudDownloadIcon = {
     );
   }
 };
+
 export const CloudUploadIcon = {
   name: "CloudUploadIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -657,10 +706,10 @@ export const CloudUploadIcon = {
     );
   }
 };
+
 export const CodeIcon = {
   name: "CodeIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -674,10 +723,10 @@ export const CodeIcon = {
     );
   }
 };
+
 export const CogIcon = {
   name: "CogIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -697,10 +746,10 @@ export const CogIcon = {
     );
   }
 };
+
 export const CollectionIcon = {
   name: "CollectionIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -714,10 +763,10 @@ export const CollectionIcon = {
     );
   }
 };
+
 export const ColorSwatchIcon = {
   name: "ColorSwatchIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -731,10 +780,10 @@ export const ColorSwatchIcon = {
     );
   }
 };
+
 export const CreditCardIcon = {
   name: "CreditCardIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -748,25 +797,27 @@ export const CreditCardIcon = {
     );
   }
 };
+
 export const CurrencyDollarIcon = {
   name: "CurrencyDollarIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
         <path
-          fill="#4A5568"
-          d="M13.843 9.655a1 1 0 101.511-1.31l-1.51 1.31zm-3.686 4.69a1 1 0 00-1.51 1.31l1.51-1.31zM13 7a1 1 0 10-2 0h2zm-2 10a1 1 0 102 0h-2zm9-5a8 8 0 01-8 8v2c5.523 0 10-4.477 10-10h-2zm-8 8a8 8 0 01-8-8H2c0 5.523 4.477 10 10 10v-2zm-8-8a8 8 0 018-8V2C6.477 2 2 6.477 2 12h2zm8-8a8 8 0 018 8h2c0-5.523-4.477-10-10-10v2zm0 7c-.659 0-1.21-.18-1.567-.418C10.07 10.34 10 10.114 10 10H8c0 .99.602 1.765 1.324 2.246.729.486 1.678.754 2.676.754v-2zm-2-1c0-.114.07-.34.433-.582C10.79 9.18 11.342 9 12 9V7c-.998 0-1.947.268-2.676.754C8.602 8.234 8 9.009 8 10h2zm2-1c.904 0 1.563.332 1.843.655l1.511-1.31C14.597 7.472 13.317 7 12 7v2zm0 4c.659 0 1.21.18 1.567.418.364.243.433.468.433.582h2c0-.99-.602-1.765-1.324-2.246C13.947 11.268 12.998 11 12 11v2zm-1-6v1h2V7h-2zm0 9v1h2v-1h-2zm1-1c-.904 0-1.563-.332-1.843-.655l-1.51 1.31C9.402 16.528 10.682 17 12 17v-2zm2-1c0 .114-.07.34-.433.582-.357.238-.908.418-1.567.418v2c.998 0 1.947-.268 2.676-.754C15.398 15.766 16 14.991 16 14h-2zm-3-6v8h2V8h-2z"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width={ctx.props.strokeWidth || 1}
+          d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
         />
       </svg>
     );
   }
 };
+
 export const CurrencyEuroIcon = {
   name: "CurrencyEuroIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -780,10 +831,10 @@ export const CurrencyEuroIcon = {
     );
   }
 };
+
 export const CurrencyPoundIcon = {
   name: "CurrencyPoundIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -797,10 +848,10 @@ export const CurrencyPoundIcon = {
     );
   }
 };
+
 export const CurrencyRupeeIcon = {
   name: "CurrencyRupeeIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -814,10 +865,10 @@ export const CurrencyRupeeIcon = {
     );
   }
 };
+
 export const CurrencyYenIcon = {
   name: "CurrencyYenIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -831,10 +882,27 @@ export const CurrencyYenIcon = {
     );
   }
 };
+
+export const CursorClickIcon = {
+  name: "CursorClickIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width={ctx.props.strokeWidth || 1}
+          d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+        />
+      </svg>
+    );
+  }
+};
+
 export const DocumentAddIcon = {
   name: "DocumentAddIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -848,10 +916,10 @@ export const DocumentAddIcon = {
     );
   }
 };
+
 export const DocumentDownloadIcon = {
   name: "DocumentDownloadIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -865,10 +933,10 @@ export const DocumentDownloadIcon = {
     );
   }
 };
+
 export const DocumentDuplicateIcon = {
   name: "DocumentDuplicateIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -882,10 +950,10 @@ export const DocumentDuplicateIcon = {
     );
   }
 };
+
 export const DocumentRemoveIcon = {
   name: "DocumentRemoveIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -899,10 +967,27 @@ export const DocumentRemoveIcon = {
     );
   }
 };
+
+export const DocumentReportIcon = {
+  name: "DocumentReportIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width={ctx.props.strokeWidth || 1}
+          d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+        />
+      </svg>
+    );
+  }
+};
+
 export const DocumentIcon = {
   name: "DocumentIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -916,10 +1001,10 @@ export const DocumentIcon = {
     );
   }
 };
+
 export const DotsCircleHorizontalIcon = {
   name: "DotsCircleHorizontalIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -933,10 +1018,10 @@ export const DotsCircleHorizontalIcon = {
     );
   }
 };
+
 export const DotsHorizontalIcon = {
   name: "DotsHorizontalIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -950,10 +1035,10 @@ export const DotsHorizontalIcon = {
     );
   }
 };
+
 export const DotsVerticalIcon = {
   name: "DotsVerticalIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -967,10 +1052,10 @@ export const DotsVerticalIcon = {
     );
   }
 };
+
 export const DownloadIcon = {
   name: "DownloadIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -984,10 +1069,10 @@ export const DownloadIcon = {
     );
   }
 };
+
 export const DuplicateIcon = {
   name: "DuplicateIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1001,10 +1086,10 @@ export const DuplicateIcon = {
     );
   }
 };
+
 export const EmojiHappyIcon = {
   name: "EmojiHappyIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1018,10 +1103,10 @@ export const EmojiHappyIcon = {
     );
   }
 };
+
 export const EmojiSadIcon = {
   name: "EmojiSadIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1035,10 +1120,10 @@ export const EmojiSadIcon = {
     );
   }
 };
+
 export const ExclamationCircleIcon = {
   name: "ExclamationCircleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1052,10 +1137,10 @@ export const ExclamationCircleIcon = {
     );
   }
 };
+
 export const ExclamationIcon = {
   name: "ExclamationIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1069,10 +1154,10 @@ export const ExclamationIcon = {
     );
   }
 };
+
 export const ExternalLinkIcon = {
   name: "ExternalLinkIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1086,10 +1171,10 @@ export const ExternalLinkIcon = {
     );
   }
 };
+
 export const EyeIcon = {
   name: "EyeIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1109,10 +1194,10 @@ export const EyeIcon = {
     );
   }
 };
+
 export const FilterIcon = {
   name: "FilterIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1126,10 +1211,10 @@ export const FilterIcon = {
     );
   }
 };
+
 export const FlagIcon = {
   name: "FlagIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1143,10 +1228,10 @@ export const FlagIcon = {
     );
   }
 };
+
 export const FolderIcon = {
   name: "FolderIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1160,10 +1245,10 @@ export const FolderIcon = {
     );
   }
 };
+
 export const GlobeAltIcon = {
   name: "GlobeAltIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1177,10 +1262,10 @@ export const GlobeAltIcon = {
     );
   }
 };
+
 export const GlobeIcon = {
   name: "GlobeIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1194,10 +1279,10 @@ export const GlobeIcon = {
     );
   }
 };
+
 export const HashtagIcon = {
   name: "HashtagIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1211,10 +1296,10 @@ export const HashtagIcon = {
     );
   }
 };
+
 export const HeartIcon = {
   name: "HeartIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1228,10 +1313,10 @@ export const HeartIcon = {
     );
   }
 };
+
 export const HomeIcon = {
   name: "HomeIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1245,10 +1330,10 @@ export const HomeIcon = {
     );
   }
 };
+
 export const InboxInIcon = {
   name: "InboxInIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1262,10 +1347,10 @@ export const InboxInIcon = {
     );
   }
 };
+
 export const InboxIcon = {
   name: "InboxIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1279,10 +1364,10 @@ export const InboxIcon = {
     );
   }
 };
+
 export const InformationCircleIcon = {
   name: "InformationCircleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1296,10 +1381,27 @@ export const InformationCircleIcon = {
     );
   }
 };
+
+export const KeyIcon = {
+  name: "KeyIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width={ctx.props.strokeWidth || 1}
+          d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"
+        />
+      </svg>
+    );
+  }
+};
+
 export const LightBulbIcon = {
   name: "LightBulbIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1313,10 +1415,10 @@ export const LightBulbIcon = {
     );
   }
 };
+
 export const LightningBoltIcon = {
   name: "LightningBoltIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1330,10 +1432,10 @@ export const LightningBoltIcon = {
     );
   }
 };
+
 export const LinkIcon = {
   name: "LinkIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1347,10 +1449,10 @@ export const LinkIcon = {
     );
   }
 };
+
 export const LocationMarkerIcon = {
   name: "LocationMarkerIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1370,10 +1472,10 @@ export const LocationMarkerIcon = {
     );
   }
 };
+
 export const LockClosedIcon = {
   name: "LockClosedIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1387,10 +1489,10 @@ export const LockClosedIcon = {
     );
   }
 };
+
 export const LockOpenIcon = {
   name: "LockOpenIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1404,10 +1506,27 @@ export const LockOpenIcon = {
     );
   }
 };
+
+export const LogoutIcon = {
+  name: "LogoutIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width={ctx.props.strokeWidth || 1}
+          d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+        />
+      </svg>
+    );
+  }
+};
+
 export const MailOpenIcon = {
   name: "MailOpenIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1421,10 +1540,10 @@ export const MailOpenIcon = {
     );
   }
 };
+
 export const MailIcon = {
   name: "MailIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1438,10 +1557,10 @@ export const MailIcon = {
     );
   }
 };
+
 export const MenuAlt1Icon = {
   name: "MenuAlt1Icon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1455,10 +1574,10 @@ export const MenuAlt1Icon = {
     );
   }
 };
+
 export const MenuAlt2Icon = {
   name: "MenuAlt2Icon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1472,10 +1591,10 @@ export const MenuAlt2Icon = {
     );
   }
 };
+
 export const MenuAlt3Icon = {
   name: "MenuAlt3Icon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1489,10 +1608,10 @@ export const MenuAlt3Icon = {
     );
   }
 };
+
 export const MenuAlt4Icon = {
   name: "MenuAlt4Icon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1506,10 +1625,10 @@ export const MenuAlt4Icon = {
     );
   }
 };
+
 export const MenuIcon = {
   name: "MenuIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1523,10 +1642,27 @@ export const MenuIcon = {
     );
   }
 };
+
+export const MicrophoneIcon = {
+  name: "MicrophoneIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width={ctx.props.strokeWidth || 1}
+          d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+        />
+      </svg>
+    );
+  }
+};
+
 export const MinusCircleIcon = {
   name: "MinusCircleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1540,25 +1676,27 @@ export const MinusCircleIcon = {
     );
   }
 };
+
 export const MoonIcon = {
   name: "MoonIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
         <path
-          fill="#4A5568"
-          d="M20.354 15.354l.928.373a1 1 0 00-1.3-1.3l.372.927zM8.646 3.646l.928.373a1 1 0 00-1.301-1.301l.373.928zm11.335 10.78c-.92.37-1.925.574-2.981.574v2a9.976 9.976 0 003.727-.718l-.746-1.856zM17 15a8 8 0 01-8-8H7c0 5.523 4.477 10 10 10v-2zM9 7c0-1.056.204-2.061.574-2.981l-1.856-.746A9.975 9.975 0 007 7h2zm-5 5a8.003 8.003 0 015.019-7.426l-.746-1.856A10.003 10.003 0 002 12h2zm8 8a8 8 0 01-8-8H2c0 5.523 4.477 10 10 10v-2zm7.426-5.019A8.003 8.003 0 0112 20.001v2c4.207 0 7.805-2.599 9.282-6.274l-1.856-.746z"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width={ctx.props.strokeWidth || 1}
+          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
         />
       </svg>
     );
   }
 };
+
 export const OfficeBuildingIcon = {
   name: "OfficeBuildingIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1572,10 +1710,10 @@ export const OfficeBuildingIcon = {
     );
   }
 };
+
 export const PaperClipIcon = {
   name: "PaperClipIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1589,10 +1727,10 @@ export const PaperClipIcon = {
     );
   }
 };
+
 export const PencilAltIcon = {
   name: "PencilAltIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1606,10 +1744,10 @@ export const PencilAltIcon = {
     );
   }
 };
+
 export const PencilIcon = {
   name: "PencilIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1623,10 +1761,10 @@ export const PencilIcon = {
     );
   }
 };
+
 export const PhoneIncomingIcon = {
   name: "PhoneIncomingIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1640,10 +1778,10 @@ export const PhoneIncomingIcon = {
     );
   }
 };
+
 export const PhoneOutgoingIcon = {
   name: "PhoneOutgoingIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1657,25 +1795,27 @@ export const PhoneOutgoingIcon = {
     );
   }
 };
+
 export const PhoneIcon = {
   name: "PhoneIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
         <path
-          fill="#4A5568"
-          d="M9.228 3.684L8.279 4l.949-.316zm1.498 4.493l-.949.316.949-.316zm-.502 1.21l.447.895-.447-.894zm-2.257 1.13l-.447-.895a1 1 0 00-.465 1.306l.912-.412zm5.516 5.516l-.41.912a1 1 0 001.305-.465l-.895-.447zm1.13-2.257l-.895-.447.894.447zm1.21-.502l-.316.949.316-.949zm4.493 1.498l.317-.949-.317.95zM5 2a3 3 0 00-3 3h2a1 1 0 011-1V2zm3.28 0H5v2h3.28V2zm1.897 1.368A2 2 0 008.279 2v2l1.898-.632zm1.497 4.493l-1.497-4.493L8.279 4l1.498 4.493 1.897-.632zm-1.002 2.421a2 2 0 001.002-2.421l-1.897.632.895 1.79zm-2.258 1.129l2.258-1.129-.895-1.789-2.257 1.13.894 1.788zm5.48 3.71a10.042 10.042 0 01-5.015-5.016l-1.824.822a12.042 12.042 0 006.018 6.018l.822-1.824zm-.176-1.793l-1.129 2.258 1.789.894 1.129-2.257-1.79-.895zm2.421-1.002a2 2 0 00-2.421 1.002l1.789.895.632-1.897zm4.494 1.497l-4.494-1.497-.632 1.897L20 15.72l.633-1.898zM22 15.721a2 2 0 00-1.367-1.898L20 15.721h2zM22 19v-3.28h-2V19h2zm-3 3a3 3 0 003-3h-2a1 1 0 01-1 1v2zm-1 0h1v-2h-1v2zM2 6c0 8.837 7.163 16 16 16v-2C10.268 20 4 13.732 4 6H2zm0-1v1h2V5H2z"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width={ctx.props.strokeWidth || 1}
+          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
         />
       </svg>
     );
   }
 };
+
 export const PhotographIcon = {
   name: "PhotographIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1689,10 +1829,10 @@ export const PhotographIcon = {
     );
   }
 };
+
 export const PlusCircleIcon = {
   name: "PlusCircleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1706,10 +1846,10 @@ export const PlusCircleIcon = {
     );
   }
 };
+
 export const PlusIcon = {
   name: "PlusIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1723,10 +1863,10 @@ export const PlusIcon = {
     );
   }
 };
+
 export const PrinterIcon = {
   name: "PrinterIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1740,10 +1880,10 @@ export const PrinterIcon = {
     );
   }
 };
+
 export const QrcodeIcon = {
   name: "QrcodeIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1757,10 +1897,10 @@ export const QrcodeIcon = {
     );
   }
 };
+
 export const QuestionMarkCircleIcon = {
   name: "QuestionMarkCircleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1774,10 +1914,10 @@ export const QuestionMarkCircleIcon = {
     );
   }
 };
+
 export const ReceiptRefundIcon = {
   name: "ReceiptRefundIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1791,10 +1931,10 @@ export const ReceiptRefundIcon = {
     );
   }
 };
+
 export const RefreshIcon = {
   name: "RefreshIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1808,10 +1948,10 @@ export const RefreshIcon = {
     );
   }
 };
+
 export const ReplyIcon = {
   name: "ReplyIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1825,10 +1965,10 @@ export const ReplyIcon = {
     );
   }
 };
+
 export const ScaleIcon = {
   name: "ScaleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1842,10 +1982,10 @@ export const ScaleIcon = {
     );
   }
 };
+
 export const SearchIcon = {
   name: "SearchIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1859,10 +1999,10 @@ export const SearchIcon = {
     );
   }
 };
+
 export const SelectorIcon = {
   name: "SelectorIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1876,10 +2016,10 @@ export const SelectorIcon = {
     );
   }
 };
+
 export const ShareIcon = {
   name: "ShareIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1893,10 +2033,10 @@ export const ShareIcon = {
     );
   }
 };
+
 export const ShieldCheckIcon = {
   name: "ShieldCheckIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1910,10 +2050,10 @@ export const ShieldCheckIcon = {
     );
   }
 };
+
 export const ShieldExclamationIcon = {
   name: "ShieldExclamationIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1927,10 +2067,27 @@ export const ShieldExclamationIcon = {
     );
   }
 };
+
+export const ShoppingCartIcon = {
+  name: "ShoppingCartIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width={ctx.props.strokeWidth || 1}
+          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+        />
+      </svg>
+    );
+  }
+};
+
 export const SortAscendingIcon = {
   name: "SortAscendingIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1944,10 +2101,10 @@ export const SortAscendingIcon = {
     );
   }
 };
+
 export const SortDescendingIcon = {
   name: "SortDescendingIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1961,10 +2118,10 @@ export const SortDescendingIcon = {
     );
   }
 };
+
 export const SparklesIcon = {
   name: "SparklesIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1978,10 +2135,27 @@ export const SparklesIcon = {
     );
   }
 };
+
+export const SpeakerphoneIcon = {
+  name: "SpeakerphoneIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width={ctx.props.strokeWidth || 1}
+          d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"
+        />
+      </svg>
+    );
+  }
+};
+
 export const SunIcon = {
   name: "SunIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -1995,10 +2169,10 @@ export const SunIcon = {
     );
   }
 };
+
 export const SwitchHorizontalIcon = {
   name: "SwitchHorizontalIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2012,10 +2186,10 @@ export const SwitchHorizontalIcon = {
     );
   }
 };
+
 export const SwitchVerticalIcon = {
   name: "SwitchVerticalIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2029,10 +2203,10 @@ export const SwitchVerticalIcon = {
     );
   }
 };
+
 export const TagIcon = {
   name: "TagIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2046,10 +2220,10 @@ export const TagIcon = {
     );
   }
 };
+
 export const TemplateIcon = {
   name: "TemplateIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2063,32 +2237,27 @@ export const TemplateIcon = {
     );
   }
 };
+
 export const TicketIcon = {
   name: "TicketIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
         <path
-          fill="#4A5568"
-          d="M21 10v1a1 1 0 001-1h-1zm0 4h1a1 1 0 00-1-1v1zM3 14v-1a1 1 0 00-1 1h1zm0-4H2a1 1 0 001 1v-1zm2-6a3 3 0 00-3 3h2a1 1 0 011-1V4zm14 0H5v2h14V4zm3 3a3 3 0 00-3-3v2a1 1 0 011 1h2zm0 3V7h-2v3h2zm-2 2a1 1 0 011-1V9a3 3 0 00-3 3h2zm1 1a1 1 0 01-1-1h-2a3 3 0 003 3v-2zm1 4v-3h-2v3h2zm-3 3a3 3 0 003-3h-2a1 1 0 01-1 1v2zM5 20h14v-2H5v2zm-3-3a3 3 0 003 3v-2a1 1 0 01-1-1H2zm0-3v3h2v-3H2zm2-2a1 1 0 01-1 1v2a3 3 0 003-3H4zm-1-1a1 1 0 011 1h2a3 3 0 00-3-3v2zM2 7v3h2V7H2z"
-        />
-        <path stroke-linecap="round" stroke-width={ctx.props.strokeWidth || 1} d="M15 5v2" />
-        <path
           stroke-linecap="round"
           stroke-linejoin="round"
           stroke-width={ctx.props.strokeWidth || 1}
-          d="M15 11v2M15 17v2"
+          d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"
         />
       </svg>
     );
   }
 };
+
 export const TranslateIcon = {
   name: "TranslateIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2102,10 +2271,10 @@ export const TranslateIcon = {
     );
   }
 };
+
 export const TrashIcon = {
   name: "TrashIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2119,10 +2288,10 @@ export const TrashIcon = {
     );
   }
 };
+
 export const TrendingDownIcon = {
   name: "TrendingDownIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2136,10 +2305,10 @@ export const TrendingDownIcon = {
     );
   }
 };
+
 export const TrendingUpIcon = {
   name: "TrendingUpIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2153,10 +2322,10 @@ export const TrendingUpIcon = {
     );
   }
 };
+
 export const UploadIcon = {
   name: "UploadIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2170,10 +2339,10 @@ export const UploadIcon = {
     );
   }
 };
+
 export const UserAddIcon = {
   name: "UserAddIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2187,10 +2356,10 @@ export const UserAddIcon = {
     );
   }
 };
+
 export const UserCircleIcon = {
   name: "UserCircleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2204,10 +2373,10 @@ export const UserCircleIcon = {
     );
   }
 };
+
 export const UserGroupIcon = {
   name: "UserGroupIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2221,10 +2390,10 @@ export const UserGroupIcon = {
     );
   }
 };
+
 export const UserRemoveIcon = {
   name: "UserRemoveIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2238,10 +2407,10 @@ export const UserRemoveIcon = {
     );
   }
 };
+
 export const UserIcon = {
   name: "UserIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2255,10 +2424,10 @@ export const UserIcon = {
     );
   }
 };
+
 export const UsersIcon = {
   name: "UsersIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2272,10 +2441,10 @@ export const UsersIcon = {
     );
   }
 };
+
 export const ViewBoardsIcon = {
   name: "ViewBoardsIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2289,10 +2458,10 @@ export const ViewBoardsIcon = {
     );
   }
 };
+
 export const ViewListIcon = {
   name: "ViewListIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2306,10 +2475,10 @@ export const ViewListIcon = {
     );
   }
 };
+
 export const VolumeOffIcon = {
   name: "VolumeOffIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2330,10 +2499,10 @@ export const VolumeOffIcon = {
     );
   }
 };
+
 export const VolumeUpIcon = {
   name: "VolumeUpIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2347,10 +2516,10 @@ export const VolumeUpIcon = {
     );
   }
 };
+
 export const XCircleIcon = {
   name: "XCircleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2364,10 +2533,10 @@ export const XCircleIcon = {
     );
   }
 };
+
 export const XIcon = {
   name: "XIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2381,10 +2550,10 @@ export const XIcon = {
     );
   }
 };
+
 export const ZoomInIcon = {
   name: "ZoomInIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
@@ -2398,10 +2567,10 @@ export const ZoomInIcon = {
     );
   }
 };
+
 export const ZoomOutIcon = {
   name: "ZoomOutIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>

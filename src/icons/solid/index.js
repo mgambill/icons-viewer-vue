@@ -1,7 +1,6 @@
 export const AdjustmentsIcon = {
   name: "AdjustmentsIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -10,10 +9,10 @@ export const AdjustmentsIcon = {
     );
   }
 };
+
 export const AnnotationIcon = {
   name: "AnnotationIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -26,10 +25,10 @@ export const AnnotationIcon = {
     );
   }
 };
+
 export const ArchiveIcon = {
   name: "ArchiveIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -43,10 +42,10 @@ export const ArchiveIcon = {
     );
   }
 };
+
 export const ArrowCircleDownIcon = {
   name: "ArrowCircleDownIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -59,10 +58,10 @@ export const ArrowCircleDownIcon = {
     );
   }
 };
+
 export const ArrowCircleLeftIcon = {
   name: "ArrowCircleLeftIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -75,10 +74,10 @@ export const ArrowCircleLeftIcon = {
     );
   }
 };
+
 export const ArrowCircleRightIcon = {
   name: "ArrowCircleRightIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -91,10 +90,10 @@ export const ArrowCircleRightIcon = {
     );
   }
 };
+
 export const ArrowCircleUpIcon = {
   name: "ArrowCircleUpIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -107,10 +106,10 @@ export const ArrowCircleUpIcon = {
     );
   }
 };
+
 export const ArrowDownIcon = {
   name: "ArrowDownIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -123,10 +122,10 @@ export const ArrowDownIcon = {
     );
   }
 };
+
 export const ArrowLeftIcon = {
   name: "ArrowLeftIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -139,10 +138,10 @@ export const ArrowLeftIcon = {
     );
   }
 };
+
 export const ArrowNarrowDownIcon = {
   name: "ArrowNarrowDownIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -155,10 +154,10 @@ export const ArrowNarrowDownIcon = {
     );
   }
 };
+
 export const ArrowNarrowLeftIcon = {
   name: "ArrowNarrowLeftIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -171,10 +170,10 @@ export const ArrowNarrowLeftIcon = {
     );
   }
 };
+
 export const ArrowNarrowRightIcon = {
   name: "ArrowNarrowRightIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -187,10 +186,10 @@ export const ArrowNarrowRightIcon = {
     );
   }
 };
+
 export const ArrowNarrowUpIcon = {
   name: "ArrowNarrowUpIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -203,10 +202,10 @@ export const ArrowNarrowUpIcon = {
     );
   }
 };
+
 export const ArrowRightIcon = {
   name: "ArrowRightIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -219,10 +218,10 @@ export const ArrowRightIcon = {
     );
   }
 };
+
 export const ArrowUpIcon = {
   name: "ArrowUpIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -235,10 +234,10 @@ export const ArrowUpIcon = {
     );
   }
 };
+
 export const AtSymbolIcon = {
   name: "AtSymbolIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -251,10 +250,42 @@ export const AtSymbolIcon = {
     );
   }
 };
+
+export const BadgeCheckIcon = {
+  name: "BadgeCheckIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    );
+  }
+};
+
+export const BanIcon = {
+  name: "BanIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    );
+  }
+};
+
 export const BellIcon = {
   name: "BellIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -263,10 +294,10 @@ export const BellIcon = {
     );
   }
 };
+
 export const BookOpenIcon = {
   name: "BookOpenIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -275,10 +306,10 @@ export const BookOpenIcon = {
     );
   }
 };
+
 export const BookmarkIcon = {
   name: "BookmarkIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -287,10 +318,10 @@ export const BookmarkIcon = {
     );
   }
 };
+
 export const BriefcaseIcon = {
   name: "BriefcaseIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -304,10 +335,10 @@ export const BriefcaseIcon = {
     );
   }
 };
+
 export const CalendarIcon = {
   name: "CalendarIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -320,10 +351,10 @@ export const CalendarIcon = {
     );
   }
 };
+
 export const CameraIcon = {
   name: "CameraIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -336,10 +367,10 @@ export const CameraIcon = {
     );
   }
 };
+
 export const CashIcon = {
   name: "CashIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -352,10 +383,10 @@ export const CashIcon = {
     );
   }
 };
+
 export const ChartPieIcon = {
   name: "ChartPieIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -365,10 +396,26 @@ export const ChartPieIcon = {
     );
   }
 };
+
+export const ChatAltIcon = {
+  name: "ChatAltIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    );
+  }
+};
+
 export const ChatIcon = {
   name: "ChatIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -381,10 +428,10 @@ export const ChatIcon = {
     );
   }
 };
+
 export const CheckCircleIcon = {
   name: "CheckCircleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -397,10 +444,10 @@ export const CheckCircleIcon = {
     );
   }
 };
+
 export const CheckIcon = {
   name: "CheckIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -413,10 +460,10 @@ export const CheckIcon = {
     );
   }
 };
+
 export const CheveronDownIcon = {
   name: "CheveronDownIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -429,10 +476,10 @@ export const CheveronDownIcon = {
     );
   }
 };
+
 export const CheveronLeftIcon = {
   name: "CheveronLeftIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -445,10 +492,10 @@ export const CheveronLeftIcon = {
     );
   }
 };
+
 export const CheveronRightIcon = {
   name: "CheveronRightIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -461,10 +508,10 @@ export const CheveronRightIcon = {
     );
   }
 };
+
 export const CheveronUpIcon = {
   name: "CheveronUpIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -477,10 +524,10 @@ export const CheveronUpIcon = {
     );
   }
 };
+
 export const ClipboardCheckIcon = {
   name: "ClipboardCheckIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -494,10 +541,10 @@ export const ClipboardCheckIcon = {
     );
   }
 };
+
 export const ClipboardCopyIcon = {
   name: "ClipboardCopyIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -507,10 +554,10 @@ export const ClipboardCopyIcon = {
     );
   }
 };
+
 export const ClipboardListIcon = {
   name: "ClipboardListIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -524,10 +571,10 @@ export const ClipboardListIcon = {
     );
   }
 };
+
 export const ClipboardIcon = {
   name: "ClipboardIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -537,10 +584,10 @@ export const ClipboardIcon = {
     );
   }
 };
+
 export const ClockIcon = {
   name: "ClockIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -553,10 +600,10 @@ export const ClockIcon = {
     );
   }
 };
+
 export const CloudDownloadIcon = {
   name: "CloudDownloadIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -565,10 +612,10 @@ export const CloudDownloadIcon = {
     );
   }
 };
+
 export const CloudUploadIcon = {
   name: "CloudUploadIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -581,10 +628,10 @@ export const CloudUploadIcon = {
     );
   }
 };
+
 export const CodeIcon = {
   name: "CodeIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -597,10 +644,10 @@ export const CodeIcon = {
     );
   }
 };
+
 export const CogIcon = {
   name: "CogIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -613,10 +660,10 @@ export const CogIcon = {
     );
   }
 };
+
 export const CollectionIcon = {
   name: "CollectionIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -625,10 +672,10 @@ export const CollectionIcon = {
     );
   }
 };
+
 export const ColorSwatchIcon = {
   name: "ColorSwatchIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -641,10 +688,10 @@ export const ColorSwatchIcon = {
     );
   }
 };
+
 export const CreditCardIcon = {
   name: "CreditCardIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -658,10 +705,10 @@ export const CreditCardIcon = {
     );
   }
 };
+
 export const CurrencyDollarIcon = {
   name: "CurrencyDollarIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -675,10 +722,10 @@ export const CurrencyDollarIcon = {
     );
   }
 };
+
 export const CurrencyEuroIcon = {
   name: "CurrencyEuroIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -691,10 +738,10 @@ export const CurrencyEuroIcon = {
     );
   }
 };
+
 export const CurrencyPoundIcon = {
   name: "CurrencyPoundIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -707,10 +754,10 @@ export const CurrencyPoundIcon = {
     );
   }
 };
+
 export const CurrencyRupeeIcon = {
   name: "CurrencyRupeeIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -723,10 +770,10 @@ export const CurrencyRupeeIcon = {
     );
   }
 };
+
 export const CurrencyYenIcon = {
   name: "CurrencyYenIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -739,10 +786,26 @@ export const CurrencyYenIcon = {
     );
   }
 };
+
+export const CursorClickIcon = {
+  name: "CursorClickIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    );
+  }
+};
+
 export const DocumentAddIcon = {
   name: "DocumentAddIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -755,10 +818,10 @@ export const DocumentAddIcon = {
     );
   }
 };
+
 export const DocumentDownloadIcon = {
   name: "DocumentDownloadIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -771,10 +834,10 @@ export const DocumentDownloadIcon = {
     );
   }
 };
+
 export const DocumentDuplicateIcon = {
   name: "DocumentDuplicateIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -784,10 +847,10 @@ export const DocumentDuplicateIcon = {
     );
   }
 };
+
 export const DocumentRemoveIcon = {
   name: "DocumentRemoveIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -800,10 +863,26 @@ export const DocumentRemoveIcon = {
     );
   }
 };
+
+export const DocumentReportIcon = {
+  name: "DocumentReportIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm2 10a1 1 0 10-2 0v3a1 1 0 102 0v-3zm2-3a1 1 0 011 1v5a1 1 0 11-2 0v-5a1 1 0 011-1zm4-1a1 1 0 10-2 0v7a1 1 0 102 0V8z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    );
+  }
+};
+
 export const DocumentIcon = {
   name: "DocumentIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -816,10 +895,10 @@ export const DocumentIcon = {
     );
   }
 };
+
 export const DotsCircleHorizontalIcon = {
   name: "DotsCircleHorizontalIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -832,10 +911,10 @@ export const DotsCircleHorizontalIcon = {
     );
   }
 };
+
 export const DotsHorizontalIcon = {
   name: "DotsHorizontalIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -844,10 +923,10 @@ export const DotsHorizontalIcon = {
     );
   }
 };
+
 export const DotsVerticalIcon = {
   name: "DotsVerticalIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -856,10 +935,10 @@ export const DotsVerticalIcon = {
     );
   }
 };
+
 export const DownloadIcon = {
   name: "DownloadIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -872,10 +951,10 @@ export const DownloadIcon = {
     );
   }
 };
+
 export const DuplicateIcon = {
   name: "DuplicateIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -885,10 +964,10 @@ export const DuplicateIcon = {
     );
   }
 };
+
 export const EmojiHappyIcon = {
   name: "EmojiHappyIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -901,10 +980,10 @@ export const EmojiHappyIcon = {
     );
   }
 };
+
 export const EmojiSadIcon = {
   name: "EmojiSadIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -917,10 +996,10 @@ export const EmojiSadIcon = {
     );
   }
 };
+
 export const ExclamationCircleIcon = {
   name: "ExclamationCircleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -933,10 +1012,10 @@ export const ExclamationCircleIcon = {
     );
   }
 };
+
 export const ExclamationIcon = {
   name: "ExclamationIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -949,10 +1028,10 @@ export const ExclamationIcon = {
     );
   }
 };
+
 export const ExternalLinkIcon = {
   name: "ExternalLinkIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -962,10 +1041,10 @@ export const ExternalLinkIcon = {
     );
   }
 };
+
 export const EyeIcon = {
   name: "EyeIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -979,10 +1058,10 @@ export const EyeIcon = {
     );
   }
 };
+
 export const FilterIcon = {
   name: "FilterIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -995,10 +1074,10 @@ export const FilterIcon = {
     );
   }
 };
+
 export const FlagIcon = {
   name: "FlagIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1011,10 +1090,10 @@ export const FlagIcon = {
     );
   }
 };
+
 export const FolderIcon = {
   name: "FolderIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1023,10 +1102,10 @@ export const FolderIcon = {
     );
   }
 };
+
 export const GlobeAltIcon = {
   name: "GlobeAltIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1039,10 +1118,10 @@ export const GlobeAltIcon = {
     );
   }
 };
+
 export const GlobeIcon = {
   name: "GlobeIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1055,10 +1134,10 @@ export const GlobeIcon = {
     );
   }
 };
+
 export const HashtagIcon = {
   name: "HashtagIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1071,10 +1150,10 @@ export const HashtagIcon = {
     );
   }
 };
+
 export const HeartIcon = {
   name: "HeartIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1087,10 +1166,10 @@ export const HeartIcon = {
     );
   }
 };
+
 export const HomeIcon = {
   name: "HomeIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1099,10 +1178,10 @@ export const HomeIcon = {
     );
   }
 };
+
 export const InboxInIcon = {
   name: "InboxInIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1112,10 +1191,10 @@ export const InboxInIcon = {
     );
   }
 };
+
 export const InboxIcon = {
   name: "InboxIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1128,10 +1207,10 @@ export const InboxIcon = {
     );
   }
 };
+
 export const InformationCircleIcon = {
   name: "InformationCircleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1144,10 +1223,26 @@ export const InformationCircleIcon = {
     );
   }
 };
+
+export const KeyIcon = {
+  name: "KeyIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    );
+  }
+};
+
 export const LightBulbIcon = {
   name: "LightBulbIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1156,10 +1251,10 @@ export const LightBulbIcon = {
     );
   }
 };
+
 export const LightningBoltIcon = {
   name: "LightningBoltIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1172,10 +1267,10 @@ export const LightningBoltIcon = {
     );
   }
 };
+
 export const LinkIcon = {
   name: "LinkIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1188,10 +1283,10 @@ export const LinkIcon = {
     );
   }
 };
+
 export const LocationMarkerIcon = {
   name: "LocationMarkerIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1204,10 +1299,10 @@ export const LocationMarkerIcon = {
     );
   }
 };
+
 export const LockClosedIcon = {
   name: "LockClosedIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1220,10 +1315,10 @@ export const LockClosedIcon = {
     );
   }
 };
+
 export const LockOpenIcon = {
   name: "LockOpenIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1232,10 +1327,26 @@ export const LockOpenIcon = {
     );
   }
 };
+
+export const LogoutIcon = {
+  name: "LogoutIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    );
+  }
+};
+
 export const MailOpenIcon = {
   name: "MailOpenIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1248,10 +1359,10 @@ export const MailOpenIcon = {
     );
   }
 };
+
 export const MailIcon = {
   name: "MailIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1261,10 +1372,10 @@ export const MailIcon = {
     );
   }
 };
+
 export const MenuAlt1Icon = {
   name: "MenuAlt1Icon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1277,10 +1388,10 @@ export const MenuAlt1Icon = {
     );
   }
 };
+
 export const MenuAlt2Icon = {
   name: "MenuAlt2Icon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1293,10 +1404,10 @@ export const MenuAlt2Icon = {
     );
   }
 };
+
 export const MenuAlt3Icon = {
   name: "MenuAlt3Icon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1309,10 +1420,10 @@ export const MenuAlt3Icon = {
     );
   }
 };
+
 export const MenuAlt4Icon = {
   name: "MenuAlt4Icon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1325,10 +1436,10 @@ export const MenuAlt4Icon = {
     );
   }
 };
+
 export const MenuIcon = {
   name: "MenuIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1341,10 +1452,26 @@ export const MenuIcon = {
     );
   }
 };
+
+export const MicrophoneIcon = {
+  name: "MicrophoneIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    );
+  }
+};
+
 export const MinusCircleIcon = {
   name: "MinusCircleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1357,10 +1484,10 @@ export const MinusCircleIcon = {
     );
   }
 };
+
 export const MoonIcon = {
   name: "MoonIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1369,10 +1496,10 @@ export const MoonIcon = {
     );
   }
 };
+
 export const OfficeBuildingIcon = {
   name: "OfficeBuildingIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1385,10 +1512,10 @@ export const OfficeBuildingIcon = {
     );
   }
 };
+
 export const PaperClipIcon = {
   name: "PaperClipIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1401,10 +1528,10 @@ export const PaperClipIcon = {
     );
   }
 };
+
 export const PencilAltIcon = {
   name: "PencilAltIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1418,10 +1545,10 @@ export const PencilAltIcon = {
     );
   }
 };
+
 export const PencilIcon = {
   name: "PencilIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1430,10 +1557,10 @@ export const PencilIcon = {
     );
   }
 };
+
 export const PhoneIncomingIcon = {
   name: "PhoneIncomingIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1443,10 +1570,10 @@ export const PhoneIncomingIcon = {
     );
   }
 };
+
 export const PhoneOutgoingIcon = {
   name: "PhoneOutgoingIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1456,10 +1583,10 @@ export const PhoneOutgoingIcon = {
     );
   }
 };
+
 export const PhoneIcon = {
   name: "PhoneIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1468,10 +1595,10 @@ export const PhoneIcon = {
     );
   }
 };
+
 export const PhotographIcon = {
   name: "PhotographIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1484,10 +1611,10 @@ export const PhotographIcon = {
     );
   }
 };
+
 export const PlusCircleIcon = {
   name: "PlusCircleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1500,10 +1627,10 @@ export const PlusCircleIcon = {
     );
   }
 };
+
 export const PlusIcon = {
   name: "PlusIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1516,10 +1643,10 @@ export const PlusIcon = {
     );
   }
 };
+
 export const PrinterIcon = {
   name: "PrinterIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1532,10 +1659,10 @@ export const PrinterIcon = {
     );
   }
 };
+
 export const QrcodeIcon = {
   name: "QrcodeIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1549,10 +1676,10 @@ export const QrcodeIcon = {
     );
   }
 };
+
 export const QuestionMarkCircleIcon = {
   name: "QuestionMarkCircleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1565,10 +1692,10 @@ export const QuestionMarkCircleIcon = {
     );
   }
 };
+
 export const ReceiptRefundIcon = {
   name: "ReceiptRefundIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1581,10 +1708,10 @@ export const ReceiptRefundIcon = {
     );
   }
 };
+
 export const RefreshIcon = {
   name: "RefreshIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1597,10 +1724,10 @@ export const RefreshIcon = {
     );
   }
 };
+
 export const ReplyIcon = {
   name: "ReplyIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1613,10 +1740,10 @@ export const ReplyIcon = {
     );
   }
 };
+
 export const ScaleIcon = {
   name: "ScaleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1629,10 +1756,10 @@ export const ScaleIcon = {
     );
   }
 };
+
 export const SearchIcon = {
   name: "SearchIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1645,10 +1772,10 @@ export const SearchIcon = {
     );
   }
 };
+
 export const SelectorIcon = {
   name: "SelectorIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1661,10 +1788,10 @@ export const SelectorIcon = {
     );
   }
 };
+
 export const ShareIcon = {
   name: "ShareIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1673,10 +1800,10 @@ export const ShareIcon = {
     );
   }
 };
+
 export const ShieldCheckIcon = {
   name: "ShieldCheckIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1689,10 +1816,10 @@ export const ShieldCheckIcon = {
     );
   }
 };
+
 export const ShieldExclamationIcon = {
   name: "ShieldExclamationIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1705,10 +1832,22 @@ export const ShieldExclamationIcon = {
     );
   }
 };
+
+export const ShoppingCartIcon = {
+  name: "ShoppingCartIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+      </svg>
+    );
+  }
+};
+
 export const SortAscendingIcon = {
   name: "SortAscendingIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1717,10 +1856,10 @@ export const SortAscendingIcon = {
     );
   }
 };
+
 export const SortDescendingIcon = {
   name: "SortDescendingIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1729,10 +1868,10 @@ export const SortDescendingIcon = {
     );
   }
 };
+
 export const SparklesIcon = {
   name: "SparklesIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1745,10 +1884,26 @@ export const SparklesIcon = {
     );
   }
 };
+
+export const SpeakerphoneIcon = {
+  name: "SpeakerphoneIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    );
+  }
+};
+
 export const SunIcon = {
   name: "SunIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1761,10 +1916,10 @@ export const SunIcon = {
     );
   }
 };
+
 export const SwitchHorizontalIcon = {
   name: "SwitchHorizontalIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1773,10 +1928,10 @@ export const SwitchHorizontalIcon = {
     );
   }
 };
+
 export const SwitchVerticalIcon = {
   name: "SwitchVerticalIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1785,10 +1940,10 @@ export const SwitchVerticalIcon = {
     );
   }
 };
+
 export const TagIcon = {
   name: "TagIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1801,10 +1956,10 @@ export const TagIcon = {
     );
   }
 };
+
 export const TemplateIcon = {
   name: "TemplateIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1813,10 +1968,10 @@ export const TemplateIcon = {
     );
   }
 };
+
 export const TicketIcon = {
   name: "TicketIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1825,10 +1980,10 @@ export const TicketIcon = {
     );
   }
 };
+
 export const TranslateIcon = {
   name: "TranslateIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1841,10 +1996,10 @@ export const TranslateIcon = {
     );
   }
 };
+
 export const TrashIcon = {
   name: "TrashIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1857,10 +2012,10 @@ export const TrashIcon = {
     );
   }
 };
+
 export const TrendingDownIcon = {
   name: "TrendingDownIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1873,10 +2028,10 @@ export const TrendingDownIcon = {
     );
   }
 };
+
 export const TrendingUpIcon = {
   name: "TrendingUpIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1889,10 +2044,10 @@ export const TrendingUpIcon = {
     );
   }
 };
+
 export const UploadIcon = {
   name: "UploadIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1905,10 +2060,10 @@ export const UploadIcon = {
     );
   }
 };
+
 export const UserAddIcon = {
   name: "UserAddIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1917,10 +2072,10 @@ export const UserAddIcon = {
     );
   }
 };
+
 export const UserCircleIcon = {
   name: "UserCircleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1933,10 +2088,10 @@ export const UserCircleIcon = {
     );
   }
 };
+
 export const UserGroupIcon = {
   name: "UserGroupIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1945,10 +2100,10 @@ export const UserGroupIcon = {
     );
   }
 };
+
 export const UserRemoveIcon = {
   name: "UserRemoveIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1957,10 +2112,10 @@ export const UserRemoveIcon = {
     );
   }
 };
+
 export const UserIcon = {
   name: "UserIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1969,10 +2124,10 @@ export const UserIcon = {
     );
   }
 };
+
 export const UsersIcon = {
   name: "UsersIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1981,10 +2136,10 @@ export const UsersIcon = {
     );
   }
 };
+
 export const ViewBoardsIcon = {
   name: "ViewBoardsIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -1993,10 +2148,10 @@ export const ViewBoardsIcon = {
     );
   }
 };
+
 export const ViewListIcon = {
   name: "ViewListIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -2009,10 +2164,10 @@ export const ViewListIcon = {
     );
   }
 };
+
 export const VolumeOffIcon = {
   name: "VolumeOffIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -2025,10 +2180,10 @@ export const VolumeOffIcon = {
     );
   }
 };
+
 export const VolumeUpIcon = {
   name: "VolumeUpIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -2041,10 +2196,10 @@ export const VolumeUpIcon = {
     );
   }
 };
+
 export const XCircleIcon = {
   name: "XCircleIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -2057,10 +2212,10 @@ export const XCircleIcon = {
     );
   }
 };
+
 export const XIcon = {
   name: "XIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -2073,10 +2228,10 @@ export const XIcon = {
     );
   }
 };
+
 export const ZoomInIcon = {
   name: "ZoomInIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
@@ -2090,10 +2245,10 @@ export const ZoomInIcon = {
     );
   }
 };
+
 export const ZoomOutIcon = {
   name: "ZoomOutIcon",
   functional: true,
-
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
