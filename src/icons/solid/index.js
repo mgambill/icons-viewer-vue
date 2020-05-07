@@ -307,6 +307,22 @@ export const BookOpenIcon = {
   }
 };
 
+export const BookmarkAltIcon = {
+  name: "BookmarkAltIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M3 5a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm11 1H6v8l4-2 4 2V6z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    );
+  }
+};
+
 export const BookmarkIcon = {
   name: "BookmarkIcon",
   functional: true,
@@ -384,6 +400,18 @@ export const CashIcon = {
   }
 };
 
+export const ChartBarIcon = {
+  name: "ChartBarIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
+      </svg>
+    );
+  }
+};
+
 export const ChartPieIcon = {
   name: "ChartPieIcon",
   functional: true,
@@ -392,6 +420,35 @@ export const ChartPieIcon = {
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
         <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
         <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
+      </svg>
+    );
+  }
+};
+
+export const ChartSquareBarIcon = {
+  name: "ChartSquareBarIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm9 4a1 1 0 10-2 0v6a1 1 0 102 0V7zm-3 2a1 1 0 10-2 0v4a1 1 0 102 0V9zm-3 3a1 1 0 10-2 0v1a1 1 0 102 0v-1z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    );
+  }
+};
+
+export const ChatAlt2Icon = {
+  name: "ChatAlt2Icon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z" />
+        <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z" />
       </svg>
     );
   }
@@ -803,6 +860,22 @@ export const CursorClickIcon = {
   }
 };
 
+export const DesktopComputerIcon = {
+  name: "DesktopComputerIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    );
+  }
+};
+
 export const DocumentAddIcon = {
   name: "DocumentAddIcon",
   functional: true,
@@ -1042,6 +1115,23 @@ export const ExternalLinkIcon = {
   }
 };
 
+export const EyeOffIcon = {
+  name: "EyeOffIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M3.707 2.293a1 1 0 00-1.414 1.414l14 14a1 1 0 001.414-1.414l-1.473-1.473A10.014 10.014 0 0019.542 10C18.268 5.943 14.478 3 10 3a9.958 9.958 0 00-4.512 1.074l-1.78-1.781zm4.261 4.26l1.514 1.515a2.003 2.003 0 012.45 2.45l1.514 1.514a4 4 0 00-5.478-5.478z"
+          clip-rule="evenodd"
+        />
+        <path d="M12.454 16.697L9.75 13.992a4 4 0 01-3.742-3.741L2.335 6.578A9.98 9.98 0 00.458 10c1.274 4.057 5.065 7 9.542 7 .847 0 1.669-.105 2.454-.303z" />
+      </svg>
+    );
+  }
+};
+
 export const EyeIcon = {
   name: "EyeIcon",
   functional: true,
@@ -1233,6 +1323,22 @@ export const KeyIcon = {
         <path
           fill-rule="evenodd"
           d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    );
+  }
+};
+
+export const LibraryIcon = {
+  name: "LibraryIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M10.496 2.132a1 1 0 00-.992 0l-7 4A1 1 0 003 8v7a1 1 0 100 2h14a1 1 0 100-2V8a1 1 0 00.496-1.868l-7-4zM6 9a1 1 0 00-1 1v3a1 1 0 102 0v-3a1 1 0 00-1-1zm3 1a1 1 0 012 0v3a1 1 0 11-2 0v-3zm5-1a1 1 0 00-1 1v3a1 1 0 102 0v-3a1 1 0 00-1-1z"
           clip-rule="evenodd"
         />
       </svg>
@@ -1497,6 +1603,23 @@ export const MoonIcon = {
   }
 };
 
+export const NewspaperIcon = {
+  name: "NewspaperIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z"
+          clip-rule="evenodd"
+        />
+        <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z" />
+      </svg>
+    );
+  }
+};
+
 export const OfficeBuildingIcon = {
   name: "OfficeBuildingIcon",
   functional: true,
@@ -1522,6 +1645,22 @@ export const PaperClipIcon = {
         <path
           fill-rule="evenodd"
           d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    );
+  }
+};
+
+export const PauseIcon = {
+  name: "PauseIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z"
           clip-rule="evenodd"
         />
       </svg>
@@ -1605,6 +1744,22 @@ export const PhotographIcon = {
         <path
           fill-rule="evenodd"
           d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    );
+  }
+};
+
+export const PlayIcon = {
+  name: "PlayIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
           clip-rule="evenodd"
         />
       </svg>
@@ -1901,6 +2056,34 @@ export const SpeakerphoneIcon = {
   }
 };
 
+export const StarIcon = {
+  name: "StarIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+      </svg>
+    );
+  }
+};
+
+export const StopIcon = {
+  name: "StopIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8 7a1 1 0 00-1 1v4a1 1 0 001 1h4a1 1 0 001-1V8a1 1 0 00-1-1H8z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    );
+  }
+};
+
 export const SunIcon = {
   name: "SunIcon",
   functional: true,
@@ -1910,6 +2093,22 @@ export const SunIcon = {
         <path
           fill-rule="evenodd"
           d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    );
+  }
+};
+
+export const SupportIcon = {
+  name: "SupportIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-.08.08-1.53-1.533A5.98 5.98 0 004 10c0 .954.223 1.856.619 2.657l1.54-1.54zm1.088-6.45A5.974 5.974 0 0110 4c.954 0 1.856.223 2.657.619l-1.54 1.54a4.002 4.002 0 00-2.346.033L7.246 4.668zM12 10a2 2 0 11-4 0 2 2 0 014 0z"
           clip-rule="evenodd"
         />
       </svg>
@@ -1964,6 +2163,22 @@ export const TemplateIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
         <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+      </svg>
+    );
+  }
+};
+
+export const TerminalIcon = {
+  name: "TerminalIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path
+          fill-rule="evenodd"
+          d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z"
+          clip-rule="evenodd"
+        />
       </svg>
     );
   }
@@ -2144,6 +2359,18 @@ export const ViewBoardsIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
         <path d="M2 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V4zM8 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1H9a1 1 0 01-1-1V4zM15 3a1 1 0 00-1 1v12a1 1 0 001 1h2a1 1 0 001-1V4a1 1 0 00-1-1h-2z" />
+      </svg>
+    );
+  }
+};
+
+export const ViewGridAddIcon = {
+  name: "ViewGridAddIcon",
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+        <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM14 11a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 11-2 0v-1h-1a1 1 0 110-2h1v-1a1 1 0 011-1z" />
       </svg>
     );
   }

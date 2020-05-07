@@ -32,15 +32,28 @@ export default {
       } catch (err) {
         console.error(err);
       }
+    },
+    setMarkup() {
+      this.$nextTick(() => {
+        const m = this.$el.querySelector("svg").outerHTML;
+        this.markup = this.usePug ? this.p.parse(m) : m;
+      });
+    }
+  },
+  computed: {
+    key() {
+      return `${this.type}${this.isDark}${this.iconSize}${this.iconStrokeWidth}${this.usePug}`;
+    }
+  },
+  watch: {
+    key() {
+      this.setMarkup();
     }
   },
   mounted() {
     const options = Object.assign({}, defaultOptions, { collapse: false });
-    const p = new Parser(options);
-    this.$nextTick(() => {
-      const m = this.$el.querySelector("svg").outerHTML;
-      this.markup = this.usePug ? p.parse(m) : m;
-    });
+    this.p = new Parser(options);
+    this.setMarkup();
   }
 };
 </script>

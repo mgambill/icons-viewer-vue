@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "preview": "vue-cli-service serve --mode production",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:icons": "node build"
   },
   "dependencies": {
     "@nmyvision/html2pug": "^2.1.4",
@@ -32,6 +33,8 @@
     "eslint-plugin-vue": "^6.1.2",
     "lint-staged": "^9.5.0",
     "lodash.startcase": "^4.4.0",
+    "lodash.camelcase": "^4.3.0",
+    "mkdirp": "^1.0.3",
     "prettier": "^1.19.1",
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
