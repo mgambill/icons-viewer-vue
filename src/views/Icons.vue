@@ -1,57 +1,54 @@
 <template lang="pug">
-#app.min-h-screen.w-full.relative(:class="[isDark ? 'bg-cool-gray-800':'bg-cool-gray-200']")
+#app.min-h-screen.w-full.relative(:class="[isDark ? 'bg-cool-gray-900':'bg-cool-gray-200']")
 
   .py-8.bg-cool-gray-800.mb-4
     .container.relative.mx-auto.px-3(class="xl:px-0")  
       .float-right.mt-4.flex.items-center
         
-        button.text-white.p-2(@click="toggleTheme" title="toggle dark / light mode") 
+        button.text-white.p-2(@click="toggleTheme" title="toggle dark / light mode" type="button") 
           div.w-5.w-5
-            template(v-if="isDark")         
-              //- Sun icon
-              svg( viewBox="0 0 20 20" fill="currentColor")
-                path(fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd")
-            
-            template(v-else)         
-              //- Moon icon
-              svg( viewBox="0 0 20 20" fill="currentColor")
-                path( d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z")
+            template(v-if="isDark")     
+              SolidSunIcon
+            template(v-else)  
+              SolidMoonIcon
 
         .relative.inline-block.text-right(@keydown.escape="open = false")
           div
-            button.flex.items-center.text-gray-400.relative.z-30(@click="open = !open" class="hover:text-gray-600 focus:outline-none focus:text-gray-600")
-              svg.h-5.w-5(fill="currentColor" viewBox="0 0 20 20")
-                path(fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd")
+            button.flex.items-center.text-gray-400.relative.z-30.p-2(@click="open = !open" class="hover:text-indigo-400 focus:outline-none focus:text-indigo-400" title="Settings")
+              SolidCogIcon.h-5.w-5
+              
           .fixed.inset-0.z-10.w-screen.h-screen(@click="open =  false" v-if="open")
           .origin-top-right.absolute.z-20.right-0.mt-2.w-64.rounded-md.shadow-lg(v-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95")
             .rounded-md.bg-white.shadow-xs
               .py-1.text-left
-                .flex.items-center.px-4.py-2.block(class="hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900")
-                  input#usePug.sr-only(type="checkbox" v-model="usePug")
-                  label(:class="usePug ? 'text-gray-800' : 'text-gray-300'" for="usePug")
-                    svg.w-4.h-4(viewBox="0 0 20 20" fill="currentColor" strokewidth="1")
-                      path(fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd")
-                  label.ml-2.text-sm.leading-5.text-gray-700(for="usePug")
-                    | Copy text in 
-                    a.font-bold.text-blue-600(href="https://pugjs.org/" target="_blank" rel="noreferrer") pug 
-                    | format
+
+                .block.pr-4.pl-10.py-2
+                  label.text-sm.leading-5.text-gray-700
+                      | Copy text as
+                      select.border.border.mx-1(v-model="copyFormat")
+                        option(value="html") HTML
+                        option(value="pug") Pug
+                        option(value="jsx") JSX
+
                 .border-t.border-gray-100
                 .flex.items-center.px-4.py-2.block(class="hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900")
                   input#useLocalStorage.sr-only(type="checkbox" v-model="useLocalStorage")
                   label(:class="useLocalStorage ? 'text-gray-800' : 'text-gray-300'" for="useLocalStorage")
-                    svg.w-4.h-4(viewBox="0 0 20 20" fill="currentColor" strokewidth="1")
-                      path(fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd")
+                    SolidCheckIcon.w-4.h-4
                   label.ml-2.text-sm.leading-5.text-gray-700(for="useLocalStorage")
                     | Save settings in locally
                 a.block.pr-4.pl-10.py-2.text-sm.leading-5(href="#" :class="hasState ? 'text-gray-700' : 'text-gray-400'" class="hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" @click="onReset") Reset settings
                 .border-t.border-gray-100
                 a.flex.items-center.block.pr-4.pl-10.py-2.text-sm.leading-5.text-gray-700(href="https://github.com/mgambill/heroicons-viewer-vue/issues" target="_blank" rel="noreferrer" class="hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" ) 
                   | Issues
-                  svg.w-4.h-4.ml-2(fill="none" viewBox="0 0 24 24" stroke="currentColor" strokewidth="1")
-                    path(stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14")
+                  OutlineExternalLinkIcon.w-4.h-4.ml-2
                 
       
-      h1.font-semibold.tracking-tight.text-5xl.text-gray-200 Heroicons
+      
+      h1.flex.font-semibold.tracking-tight.text-5xl.text-gray-200 
+        span {{ currentSet.title }}
+        button.btn.px-4.py-2.text-gray-500(type="button" @click="toggleSet"  class="hover:text-indigo-400 focus:outline-none focus:text-indigo-400" title="Toggle between icon sets.")
+          SolidSwitchVerticalIcon.w-6.h-6
        
       h2.mb-2.font-light.text.text-gray-100(class='-tracking-0.5')
         | MIT-licensed, 
@@ -61,8 +58,8 @@
         | and 
         a.text-indigo-300(href="https://twitter.com/adamwathan" target="_blank" rel="noreferrer" class='hover:underline') Adam Wathan 
     
-
   .container.mx-auto(class="md:px-3 xl:px-0") 
+    
     .flex.w-full
       div.flex-1
         .mt-1.flex.rounded-md.shadow-sm
@@ -71,13 +68,13 @@
               svg.h-5.w-5.text-gray-400(fill="none" viewBox="0 0 24 24" stroke="currentColor")              
                 path( stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z")            
             label.sr-only(for="filter") Search Icons
-            input#filter.form-input.block.w-full.rounded-none.rounded-l-md.pl-10.transition.ease-in-out.duration-150(class='sm:text-sm sm:leading-5' placeholder='Search icons' v-model="filterText")
-          
-          button.-ml-px.w-28.relative.inline-flex.items-center.px-3.py-2.border.border-gray-300.text-sm.leading-5.font-medium.rounded-r-md.text-gray-700.bg-white.transition.ease-in-out.duration-150(class='hover:text-gray-500 hover:bg-white focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700' @click="toggleIconType")
-            div.w-full.flex.justify-between
-              span.ml-2 {{ iconType }}
-              svg.w-5.h-5.text-gray-400(fill='none', viewBox='0 0 24 24', stroke='currentColor', strokewidth='1')
-                path(stroke-linecap='round', stroke-linejoin='round', stroke-width='1', d='M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4')
+            input#filter.form-input.block.w-full.pl-10.transition.ease-in-out.duration-150(:class="[currentSet.variants? 'rounded-none rounded-l-md':'rounded-md']" class='sm:text-sm sm:leading-5' placeholder='Search icons' v-model="filterText")
+          template(v-if="currentSet.variants")
+            button.-ml-px.w-28.relative.inline-flex.items-center.px-3.py-2.border.border-gray-300.text-sm.leading-5.font-medium.rounded-r-md.text-gray-700.bg-white.transition.ease-in-out.duration-150(class='hover:text-gray-500 hover:bg-white focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700' @click="toggleIconType")
+              div.w-full.flex.justify-between
+                span.ml-2 {{ iconType }}
+                svg.w-5.h-5.text-gray-400(fill='none', viewBox='0 0 24 24', stroke='currentColor', strokewidth='1')
+                  path(stroke-linecap='round', stroke-linejoin='round', stroke-width='1', d='M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4')
 
 
       .mt-1.ml-4
@@ -90,7 +87,7 @@
               template(v-for="(key, $index) in spacing")
              
                 option {{ key }}
-      .mt-1.ml-4(:class="{'opacity-50': isSolid }" :disabled="isSolid")
+      .mt-1.ml-4(:class="{'opacity-50': disableStroke }" :disabled="disableStroke")
           label.sr-only(for='icon_size') Stroke Width
           .relative.rounded-md.shadow-sm
             .absolute.inset-y-0.left-0.pl-3.flex.items-center.pointer-events-none
@@ -98,13 +95,11 @@
             select#icon_size.form-input.block.w-full.pl-20(class="form-input block w-full pl-10 pr-8 sm:text-sm sm:leading-5" :class="[isDark? 'bg-cool-gray-700 text-cool-gray-100' : 'bg-white']" v-model.number="iconStrokeWidth") 
               template(v-for="(key, $index) in strokeWidths")
                 option {{ key }}
-
-
-
+    
     template(v-if="filteredIcons")
       div(class="flex flex-wrap  -mx-2 mt-2")
         template( v-for="icon in filteredIcons")
-          IconCard(:icon="icon" :key="`${icon.title}--${iconType}`" :type="iconType" :is-dark="isDark" :icon-size="iconSize" :icon-stroke-width="iconStrokeWidth" :usePug="usePug")
+          IconCard(:icon="icon" :key="`${icon.title}--${iconType}`" :type="iconType" :is-dark="isDark" :icon-size="iconSize" :icon-stroke-width="iconStrokeWidth" :copyFormat="copyFormat")
 
     template(v-else)
       div.flex.h-48.items-center.justify-center.mt-4.w-full
@@ -125,11 +120,13 @@
 </template>
 
 <script>
-import kebabCase from "lodash.kebabcase";
-import IconCard from "@/components/IconCard.vue";
-import theme from "tailwindcss/defaultTheme";
-import { default as $state, mapCache, clearState } from "../state";
-import IconNames from "@/icons/list.json";
+import kebabCase from "lodash.kebabcase"
+import IconCard from "@/components/IconCard.vue"
+import theme from "tailwindcss/defaultTheme"
+import { default as $state, mapCache, clearState } from "../state"
+import HeroiconNames from "@/icons/heroicons/list.json"
+import ZondiconNames from "@/icons/zondicons/list.json"
+import config from "@/config.json"
 
 export default {
   name: "Home",
@@ -143,41 +140,72 @@ export default {
       filterText: "",
       strokeWidths: [0.5, 1, 1.5, 2],
       spacing: Object.keys(theme.spacing).filter(key => +key > 3)
-    };
+    }
   },
   computed: {
-    ...mapCache("iconType", "iconSize", "iconStrokeWidth", "isDark", "usePug", "useLocalStorage"),
+    ...mapCache(
+      "iconType",
+      "iconSize",
+      "iconStrokeWidth",
+      "isDark",
+      "copyFormat",
+      "useLocalStorage",
+      "iconVariant",
+      "iconSetIndex"
+    ),
     filteredIcons() {
-      const filter = this.filterText.toLowerCase();
-      if (filter.length === 0) return this.icons;
-      return this.icons.filter(x => x.title.toLowerCase().indexOf(filter) > -1);
+      const filter = this.filterText.toLowerCase()
+      if (filter.length === 0) return this.icons
+      return this.icons.filter(x => x.title.toLowerCase().indexOf(filter) > -1)
     },
-    isSolid() {
-      return this.iconType === "Solid";
+    disableStroke() {
+      return this.iconType !== "Outline"
     },
     hasState() {
-      return $state.hasState;
+      return $state.hasState
+    },
+    currentSet() {
+      return config[this.iconSetIndex]
     }
   },
   methods: {
     toggleTheme() {
-      this.isDark = !this.isDark;
+      this.isDark = !this.isDark
     },
     onReset() {
-      clearState();
-      this.open = false;
+      clearState()
+      this.open = false
     },
     toggleIconType() {
-      this.iconType = this.isSolid ? "Outline" : "Solid";
+      this.iconType = this.iconType === "Solid" ? "Outline" : "Solid"
+      this.iconVariant = this.iconType
+    },
+    toggleSet() {
+      this.iconSetIndex = this.iconSetIndex === 0 ? 1 : 0
+    }
+  },
+  watch: {
+    iconSetIndex: {
+      immediate: true,
+      handler() {
+        const arr = this.iconSetIndex === 0 ? HeroiconNames : ZondiconNames
+        this.icons = arr.map(x => ({
+          icon: x,
+          title: kebabCase(x.replace("Icon", ""))
+        }))
+        if (this.currentSet.variants === null) {
+          this.iconType = null
+        } else {
+          this.iconType = this.iconVariant
+        }
+        // this.$nextTick(() => {
+
+        // })
+      }
     }
   },
   mounted() {
-    this.$nextTick(() => {
-      this.icons = IconNames.map(x => ({
-        icon: x,
-        title: kebabCase(x.replace("Icon", ""))
-      }));
-    });
+    this.config = config
   }
-};
+}
 </script>

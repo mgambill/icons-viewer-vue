@@ -1,67 +1,122 @@
-const fs = require("fs");
-const path = require("path");
-const camelCase = require("lodash.camelcase");
-const mkdir = require("mkdirp");
+const fs = require("fs").promises
+const path = require("path")
+const camelCase = require("lodash.camelcase")
+const mkdir = require("mkdirp")
 
 const pascalCase = str => {
-  let t = camelCase(str);
-  return t.charAt(0).toUpperCase() + t.slice(1);
-};
+  let t = camelCase(str)
+  return t.charAt(0).toUpperCase() + t.slice(1)
+}
 
-const getComponentName = v => pascalCase(v.replace(/\.[a-z]+$/, "Icon"));
+const getComponentName = v => pascalCase(v.replace(/\.[a-z]+$/, "Icon"))
 
-function componentTemplate({ name, content }) {
-  let code = `export const ${getComponentName(name)} = {
-  name: '${getComponentName(name)}',
+function componentTemplate({ name, content, componentFormatter }) {
+  const n = getComponentName(name)
+  const code = `export const ${n} = {
+  name: '${n}',
   functional: true,
   render(h, ctx) {
     return (
       ${content.replace(/<svg([^>]+)>/, "<svg$1 {...ctx.data}>")})    
   }
 }
-`;
-
-  code = code.replace(/stroke-width="2"/g, `stroke-width={ctx.props.strokeWidth || 1}`);
-
-  return code;
+`
+  return componentFormatter(name, content, code)
 }
+// pass in functions to allow for customizations....
+async function createControls(
+  iconsPaths,
+  destination,
+  {
+    folderFormatter = x => x,
+    nameFormatter = x => x,
+    // eslint-disable-next-line no-unused-vars
+    excludePredicate = (x, i) => false,
+    // eslint-disable-next-line no-unused-vars
+    componentFormatter = (name, content, code) => code
+  }
+) {
+  await iconsPaths.forEach(async (iconsPath, index) => {
+    const p = path.parse(iconsPath)
+    const base = folderFormatter(p.base)
+    const folder = `${destination}/${base}`
+    const icons = await fs.readdir(iconsPath)
 
-function createControls(iconsPaths, destination) {
-  iconsPaths.forEach(iconsPath => {
-    const p = path.parse(iconsPath);
-    const base = p.base.replace("-md", "").replace("-sm", "");
-    const icons = fs.readdirSync(iconsPath);
-    const component = icons
-      .map(name =>
+    // build components
+    let component = []
+    for (const name of icons) {
+      const stat = await fs.lstat(path.join(iconsPath, name))
+      // skip sub directories
+      if (stat.isDirectory()) continue
+      if (excludePredicate(name, index) === true) continue
+
+      const content = await fs.readFile(path.join(iconsPath, name), "utf8")
+      component.push(
         componentTemplate({
-          name: name.slice(3), //remove extension
-          content: fs.readFileSync(path.join(iconsPath, name), "utf8")
+          name: nameFormatter(name), //remove extension
+          content,
+          componentFormatter
         })
       )
-      .join("\n");
-    //console.log(component)
-    mkdir.sync(`${destination}/${base}`);
-    fs.truncateSync(`${destination}/${base}/index.js`, 0);
-    fs.writeFileSync(`${destination}/${base}/index.js`, component, "utf8");
+    }
+    // makde directory
+    mkdir.sync(path.join(__dirname, `${folder}`))
 
-    console.log(`${destination}/${base}/index.js`);
-  });
+    await fs.writeFile(`${folder}/index.js`, component.join("\n"), "utf8")
+
+    console.log(`${folder}/index.js`)
+  })
 }
 
-function createList(iconsPath, destination) {
-  console.log(iconsPath);
-  const icons = fs.readdirSync(iconsPath);
-  const text = JSON.stringify(
-    icons.map(name => getComponentName(name.slice(3))),
-    null,
-    2
-  );
-  fs.writeFileSync(`${destination}/list.json`, text, "utf8");
+async function createList(iconsPath, destination, nameFormatter = x => x) {
+  let icons = (await fs.readdir(iconsPath)).sort()
+  const unique = (value, index, self) => {
+    return self.indexOf(value) === index
+  }
+  const text = JSON.stringify(icons.map(name => getComponentName(nameFormatter(name))).filter(unique), null, 2)
+
+  await fs.writeFile(`${destination}/list.json`, text, "utf8")
 }
-const destinationPath = "./src/icons";
-const root = "D:\\Development\\Github\\refactoringui\\heroicons\\dist";
 
-const iconsPaths = [path.join(root, "outline-md"), path.join(root, "solid-sm")];
+async function BuildHeroIcons() {
+  const destinationPath = "./src/icons/heroicons"
+  const root = path.join(__dirname, "node_modules\\heroicons\\dist")
+  const folderFormatter = p => p.replace("-md", "").replace("-sm", "")
+  const nameFormatter = name => name.slice(3)
+  const excludePredicate = (name, index) =>
+    (index === 0 && !name.startsWith("md")) || (index === 1 && !name.startsWith("sm"))
+  const componentFormatter = (name, content, code) =>
+    code.replace(/stroke-width="2"/g, `stroke-width={ctx.props.strokeWidth || 1}`)
+  const iconsPaths = [path.join(root, "outline-md"), path.join(root, "solid-sm")]
 
-createControls(iconsPaths, destinationPath);
-createList(iconsPaths[0], destinationPath);
+  await createControls(iconsPaths, destinationPath, {
+    folderFormatter,
+    nameFormatter,
+    excludePredicate,
+    componentFormatter
+  })
+  await createList(iconsPaths[0], destinationPath, nameFormatter)
+}
+
+async function BuildZondicons() {
+  const destinationPath = "./src/icons"
+  const root = path.join(__dirname, "zondicons")
+
+  const componentFormatter = (name, content, code) =>
+    code.replace(`xmlns="http://www.w3.org/2000/svg"`, `fill="currentColor"`)
+  const iconsPaths = [root]
+
+  await createControls(iconsPaths, destinationPath, {
+    componentFormatter
+  })
+  await createList(iconsPaths[0], path.join(destinationPath, "zondicons"))
+}
+
+;(async () => {
+  try {
+    await BuildZondicons()
+    await BuildHeroIcons()
+  } catch (e) {
+    console.log(e)
+  }
+})()

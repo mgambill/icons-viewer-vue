@@ -1,0 +1,17 @@
+[
+  {
+    "key": "heroicons",
+    "title": "Heroicons",
+    "source": "icons/heroicons",
+    "variants": [
+      "Outline",
+      "Solid"
+    ]
+  },
+  {
+    "key": "zondicons",
+    "title": "Zondicons",
+    "source": "icons/zondicons",
+    "variants": null
+  }
+]

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --port 8052",
     "preview": "vue-cli-service serve --mode production",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",
-    "@tailwindcss/ui": "^0.1.2",
+    "@tailwindcss/ui": "^0.3.0",
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
     "@vue/cli-plugin-router": "~4.2.0",
@@ -31,9 +31,10 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.1.2",
+    "heroicons": "https://github.com/refactoringui/heroicons.git#master",
     "lint-staged": "^9.5.0",
-    "lodash.startcase": "^4.4.0",
     "lodash.camelcase": "^4.3.0",
+    "lodash.startcase": "^4.4.0",
     "mkdirp": "^1.0.3",
     "prettier": "^1.19.1",
     "sass": "^1.25.0",
@@ -67,10 +68,12 @@
   "lint-staged": {
     "*.{js,jsx,vue}": [
       "vue-cli-service lint",
+      "yarn build:icons",
       "git add"
     ]
   },
   "prettier": {
-    "printWidth": 120
+    "printWidth": 120,
+    "semi": false
   }
 }
