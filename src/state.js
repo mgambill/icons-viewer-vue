@@ -11,7 +11,7 @@ const state = Vue.observable({
   usePug: false,
   useLocalStorage: true,
   hasState: false,
-  iconSetIndex: 1,
+  iconSetIndex: 0,
   iconVariant: "Solid"
 })
 
