@@ -13,13 +13,13 @@
     "@nmyvision/html2pug": "^2.1.4",
     "core-js": "^3.6.4",
     "lodash.kebabcase": "^4.1.1",
-    "tailwindcss": "^1.2.0",
+    "tailwindcss": "^1.4.6",
     "vue": "^2.6.11",
     "vue-clipboard2": "^0.3.1",
     "vue-router": "^3.1.5"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "@fullhuman/postcss-purgecss": "^2.2.0",
     "@tailwindcss/ui": "^0.3.0",
     "@vue/cli-plugin-babel": "~4.2.0",
     "@vue/cli-plugin-eslint": "~4.2.0",
