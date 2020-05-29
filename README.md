@@ -18,6 +18,11 @@ Initial idea from: https://github.com/codex-src/heroicons-viewer
 
 ## Releases
 
+2020-05-29
+
+- update build script to reflect changes in icon repo
+- updated underlining iconset 
+
 2020-05-10
 - added Zodicons support
 - internally use IconComponents

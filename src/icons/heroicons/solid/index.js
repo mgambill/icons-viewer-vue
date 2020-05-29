@@ -179,6 +179,18 @@ export const ArrowUpIcon = {
   }
 }
 
+export const ArrowsExpandIcon = {
+  name: 'ArrowsExpandIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 19 20" fill="currentColor" {...ctx.data}>
+  <path stroke="#374151" stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M3 8V4m0 0h4M3 4l4 4m8 0V4m0 0h-4m4 0l-4 4m-8 4v4m0 0h4m-4 0l4-4m8 4l-4-4m4 4v-4m0 4h-4"/>
+</svg>
+)    
+  }
+}
+
 export const AtSymbolIcon = {
   name: 'AtSymbolIcon',
   functional: true,
@@ -410,8 +422,8 @@ export const CheckIcon = {
   }
 }
 
-export const CheveronDownIcon = {
-  name: 'CheveronDownIcon',
+export const ChevronDownIcon = {
+  name: 'ChevronDownIcon',
   functional: true,
   render(h, ctx) {
     return (
@@ -422,8 +434,8 @@ export const CheveronDownIcon = {
   }
 }
 
-export const CheveronLeftIcon = {
-  name: 'CheveronLeftIcon',
+export const ChevronLeftIcon = {
+  name: 'ChevronLeftIcon',
   functional: true,
   render(h, ctx) {
     return (
@@ -434,8 +446,8 @@ export const CheveronLeftIcon = {
   }
 }
 
-export const CheveronRightIcon = {
-  name: 'CheveronRightIcon',
+export const ChevronRightIcon = {
+  name: 'ChevronRightIcon',
   functional: true,
   render(h, ctx) {
     return (
@@ -446,8 +458,8 @@ export const CheveronRightIcon = {
   }
 }
 
-export const CheveronUpIcon = {
-  name: 'CheveronUpIcon',
+export const ChevronUpIcon = {
+  name: 'ChevronUpIcon',
   functional: true,
   render(h, ctx) {
     return (
@@ -925,6 +937,26 @@ export const FilterIcon = {
   }
 }
 
+export const FireIcon = {
+  name: 'FireIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <g clip-path="url(#clip0)">
+    <path stroke="#374151" stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M14.243 15.243a6 6 0 01-8.486-8.486C5.757 9 6 11 9 12c0-2 1-8 2.5-9 1 2 1.571 2.586 2.742 3.757A5.981 5.981 0 0116 11a5.982 5.982 0 01-1.757 4.243z"/>
+    <path d="M7.879 15.121a3 3 0 104.242-4.242C11.536 10.293 11.25 10 10.75 9c-.75.5-1.25 3.5-1.25 4.5C7.879 13.5 7 13 7 13c0 .768.293 1.536.879 2.121z"/>
+  </g>
+  <defs>
+    <clipPath id="clip0">
+      <path d="M0 0h20v20H0z"/>
+    </clipPath>
+  </defs>
+</svg>
+)    
+  }
+}
+
 export const FlagIcon = {
   name: 'FlagIcon',
   functional: true,
@@ -932,6 +964,45 @@ export const FlagIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path fill-rule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const FolderAddIcon = {
+  name: 'FolderAddIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/>
+  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M8 11h4m-2-2v4"/>
+</svg>
+)    
+  }
+}
+
+export const FolderDownloadIcon = {
+  name: 'FolderDownloadIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/>
+  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M10 9v4m0 0l-2-2m2 2l2-2"/>
+</svg>
+)    
+  }
+}
+
+export const FolderRemoveIcon = {
+  name: 'FolderRemoveIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/>
+  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M8 11h4"/>
 </svg>
 )    
   }
@@ -968,6 +1039,18 @@ export const GlobeIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const HandIcon = {
+  name: 'HandIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M9 3a1 1 0 012 0v5.5a.5.5 0 001 0V4a1 1 0 112 0v4.5a.5.5 0 001 0V6a1 1 0 112 0v5a7 7 0 11-14 0V9a1 1 0 012 0v2.5a.5.5 0 001 0V4a1 1 0 012 0v4.5a.5.5 0 001 0V3z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -1447,6 +1530,18 @@ export const PrinterIcon = {
   }
 }
 
+export const PuzzleIcon = {
+  name: 'PuzzleIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z"/>
+</svg>
+)    
+  }
+}
+
 export const QrcodeIcon = {
   name: 'QrcodeIcon',
   functional: true,
@@ -1575,6 +1670,21 @@ export const ShieldExclamationIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const ShoppingBagIcon = {
+  name: 'ShoppingBagIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path stroke="#374151" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M5 8h10l1 9H4l1-9z"/>
+  <path stroke="#374151" stroke-width={ctx.props.strokeWidth || 1} d="M7 6a3 3 0 013-3v0a3 3 0 013 3v3a3 3 0 01-3 3v0a3 3 0 01-3-3V6z"/>
+  <rect width="2" height="2" x="6" y="9" rx="1"/>
+  <rect width="2" height="2" x="12" y="9" rx="1"/>
 </svg>
 )    
   }
@@ -1748,6 +1858,30 @@ export const TerminalIcon = {
   }
 }
 
+export const ThumbDownIcon = {
+  name: 'ThumbDownIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M18 9.5a1.5 1.5 0 11-3 0v-6a1.5 1.5 0 013 0v6zM14 9.667v-5.43a2 2 0 00-1.105-1.79l-.05-.025A4 4 0 0011.055 2H5.64a2 2 0 00-1.962 1.608l-1.2 6A2 2 0 004.44 12H8v4a2 2 0 002 2 1 1 0 001-1v-.667a4 4 0 01.8-2.4l1.4-1.866a4 4 0 00.8-2.4z"/>
+</svg>
+)    
+  }
+}
+
+export const ThumbUpIcon = {
+  name: 'ThumbUpIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"/>
+</svg>
+)    
+  }
+}
+
 export const TicketIcon = {
   name: 'TicketIcon',
   functional: true,
@@ -1911,6 +2045,18 @@ export const ViewGridAddIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM14 11a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 11-2 0v-1h-1a1 1 0 110-2h1v-1a1 1 0 011-1z"/>
+</svg>
+)    
+  }
+}
+
+export const ViewGridIcon = {
+  name: 'ViewGridIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>
 </svg>
 )    
   }
