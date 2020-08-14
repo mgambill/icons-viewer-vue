@@ -6,12 +6,24 @@
     "variants": [
       "Outline",
       "Solid"
-    ]
+    ],
+    "prefix": null,
+    "info":"MIT-licensed, [open source iconset](https://github.com/refactoringui/heroicons/) by [Steve Schoger](https://twitter.com/steveschoger) and [Adam Wathan](https://twitter.com/adamwathan)"
   },
   {
     "key": "zondicons",
     "title": "Zondicons",
     "source": "icons/zondicons",
-    "variants": null
+    "variants": null,
+    "prefix": "Zondicon_",
+    "info":"MIT-licensed, [open source iconset](https://www.zondicons.com/) by [Steve Schoger](https://twitter.com/steveschoger)"
+  },
+  {
+    "key": "codicons",
+    "title": "Codicons (VS Code)",
+    "source": "icons/codicons",
+    "variants": null,
+    "prefix": "Codicon_",
+    "info": "Creative Commons-licensed [iconset](https://github.com/microsoft/vscode-codicons/) used in [Visual Studio Code](https://code.visualstudio.com/) from Microsoft."
   }
 ]

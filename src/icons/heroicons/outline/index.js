@@ -1,3 +1,17 @@
+export const AcademicCapIcon = {
+  name: 'AcademicCapIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path fill="#fff" d="M12 14l9-5-9-5-9 5 9 5z"/>
+  <path fill="#fff" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/>
+</svg>
+)    
+  }
+}
+
 export const AdjustmentsIcon = {
   name: 'AdjustmentsIcon',
   functional: true,
@@ -202,6 +216,18 @@ export const AtSymbolIcon = {
   }
 }
 
+export const BackspaceIcon = {
+  name: 'BackspaceIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z"/>
+</svg>
+)    
+  }
+}
+
 export const BadgeCheckIcon = {
   name: 'BadgeCheckIcon',
   functional: true,
@@ -221,6 +247,18 @@ export const BanIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>
+</svg>
+)    
+  }
+}
+
+export const BeakerIcon = {
+  name: 'BeakerIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
 </svg>
 )    
   }
@@ -281,6 +319,30 @@ export const BriefcaseIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+</svg>
+)    
+  }
+}
+
+export const CakeIcon = {
+  name: 'CakeIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"/>
+</svg>
+)    
+  }
+}
+
+export const CalculatorIcon = {
+  name: 'CalculatorIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
 </svg>
 )    
   }
@@ -420,6 +482,54 @@ export const CheckIcon = {
   }
 }
 
+export const ChevronDoubleDownIcon = {
+  name: 'ChevronDoubleDownIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M19 13l-7 7-7-7m14-8l-7 7-7-7"/>
+</svg>
+)    
+  }
+}
+
+export const ChevronDoubleLeftIcon = {
+  name: 'ChevronDoubleLeftIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M11 19l-7-7 7-7m8 14l-7-7 7-7"/>
+</svg>
+)    
+  }
+}
+
+export const ChevronDoubleRightIcon = {
+  name: 'ChevronDoubleRightIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M13 5l7 7-7 7M5 5l7 7-7 7"/>
+</svg>
+)    
+  }
+}
+
+export const ChevronDoubleUpIcon = {
+  name: 'ChevronDoubleUpIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M5 11l7-7 7 7M5 19l7-7 7 7"/>
+</svg>
+)    
+  }
+}
+
 export const ChevronDownIcon = {
   name: 'ChevronDownIcon',
   functional: true,
@@ -463,6 +573,18 @@ export const ChevronUpIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M5 15l7-7 7 7"/>
+</svg>
+)    
+  }
+}
+
+export const ChipIcon = {
+  name: 'ChipIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
 </svg>
 )    
   }
@@ -534,7 +656,7 @@ export const CloudDownloadIcon = {
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M8 16a5 5 0 01-.916-9.916 5.002 5.002 0 019.832 0A5.002 5.002 0 0116 16m-7 3l3 3m0 0l3-3m-3 3V10"/>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"/>
 </svg>
 )    
   }
@@ -546,7 +668,19 @@ export const CloudUploadIcon = {
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M8 17a5 5 0 01-.916-9.916 5.002 5.002 0 019.832 0A5.002 5.002 0 0116 17m-7-5l3-3m0 0l3 3m-3-3v12"/>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+</svg>
+)    
+  }
+}
+
+export const CloudIcon = {
+  name: 'CloudIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
 </svg>
 )    
   }
@@ -608,6 +742,42 @@ export const CreditCardIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
+</svg>
+)    
+  }
+}
+
+export const CubeTransparentIcon = {
+  name: 'CubeTransparentIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"/>
+</svg>
+)    
+  }
+}
+
+export const CubeIcon = {
+  name: 'CubeIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+</svg>
+)    
+  }
+}
+
+export const CurrencyBangladeshiIcon = {
+  name: 'CurrencyBangladeshiIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M11 11V9a2 2 0 00-2-2m2 4v4a2 2 0 104 0v-1m-4-3H9m2 0h4m6 1a9 9 0 11-18 0 9 9 0 0118 0z"/>
 </svg>
 )    
   }
@@ -685,6 +855,18 @@ export const CursorClickIcon = {
   }
 }
 
+export const DatabaseIcon = {
+  name: 'DatabaseIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+</svg>
+)    
+  }
+}
+
 export const DesktopComputerIcon = {
   name: 'DesktopComputerIcon',
   functional: true,
@@ -692,6 +874,30 @@ export const DesktopComputerIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+</svg>
+)    
+  }
+}
+
+export const DeviceMobileIcon = {
+  name: 'DeviceMobileIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+</svg>
+)    
+  }
+}
+
+export const DeviceTabletIcon = {
+  name: 'DeviceTabletIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
 </svg>
 )    
   }
@@ -752,6 +958,30 @@ export const DocumentReportIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+</svg>
+)    
+  }
+}
+
+export const DocumentSearchIcon = {
+  name: 'DocumentSearchIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z"/>
+</svg>
+)    
+  }
+}
+
+export const DocumentTextIcon = {
+  name: 'DocumentTextIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
 </svg>
 )    
   }
@@ -914,6 +1144,30 @@ export const EyeIcon = {
   }
 }
 
+export const FastForwardIcon = {
+  name: 'FastForwardIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M11.933 12.8a1 1 0 000-1.6L6.6 7.2A1 1 0 005 8v8a1 1 0 001.6.8l5.333-4zM19.933 12.8a1 1 0 000-1.6l-5.333-4A1 1 0 0013 8v8a1 1 0 001.6.8l5.333-4z"/>
+</svg>
+)    
+  }
+}
+
+export const FilmIcon = {
+  name: 'FilmIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"/>
+</svg>
+)    
+  }
+}
+
 export const FilterIcon = {
   name: 'FilterIcon',
   functional: true,
@@ -921,6 +1175,18 @@ export const FilterIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+</svg>
+)    
+  }
+}
+
+export const FingerPrintIcon = {
+  name: 'FingerPrintIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"/>
 </svg>
 )    
   }
@@ -975,6 +1241,18 @@ export const FolderDownloadIcon = {
   }
 }
 
+export const FolderOpenIcon = {
+  name: 'FolderOpenIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z"/>
+</svg>
+)    
+  }
+}
+
 export const FolderRemoveIcon = {
   name: 'FolderRemoveIcon',
   functional: true,
@@ -994,6 +1272,18 @@ export const FolderIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
+</svg>
+)    
+  }
+}
+
+export const GiftIcon = {
+  name: 'GiftIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/>
 </svg>
 )    
   }
@@ -1066,6 +1356,18 @@ export const HomeIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+</svg>
+)    
+  }
+}
+
+export const IdentificationIcon = {
+  name: 'IdentificationIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"/>
 </svg>
 )    
   }
@@ -1204,13 +1506,25 @@ export const LockOpenIcon = {
   }
 }
 
+export const LoginIcon = {
+  name: 'LoginIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/>
+</svg>
+)    
+  }
+}
+
 export const LogoutIcon = {
   name: 'LogoutIcon',
   functional: true,
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
 </svg>
 )    
   }
@@ -1235,6 +1549,18 @@ export const MailIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+</svg>
+)    
+  }
+}
+
+export const MapIcon = {
+  name: 'MapIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
 </svg>
 )    
   }
@@ -1324,6 +1650,18 @@ export const MinusCircleIcon = {
   }
 }
 
+export const MinusIcon = {
+  name: 'MinusIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M18 12H6"/>
+</svg>
+)    
+  }
+}
+
 export const MoonIcon = {
   name: 'MoonIcon',
   functional: true,
@@ -1331,6 +1669,18 @@ export const MoonIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+</svg>
+)    
+  }
+}
+
+export const MusicNoteIcon = {
+  name: 'MusicNoteIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
 </svg>
 )    
   }
@@ -1355,6 +1705,18 @@ export const OfficeBuildingIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+</svg>
+)    
+  }
+}
+
+export const PaperAirplaneIcon = {
+  name: 'PaperAirplaneIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
 </svg>
 )    
   }
@@ -1415,6 +1777,18 @@ export const PhoneIncomingIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M21 3l-6 6m0 0V4m0 5h5M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z"/>
+</svg>
+)    
+  }
+}
+
+export const PhoneMissedCallIcon = {
+  name: 'PhoneMissedCallIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M16 8l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z"/>
 </svg>
 )    
   }
@@ -1487,7 +1861,31 @@ export const PlusIcon = {
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M12 4v16m8-8H4"/>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+</svg>
+)    
+  }
+}
+
+export const PresentationChartBarIcon = {
+  name: 'PresentationChartBarIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/>
+</svg>
+)    
+  }
+}
+
+export const PresentationChartLineIcon = {
+  name: 'PresentationChartLineIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/>
 </svg>
 )    
   }
@@ -1553,6 +1951,18 @@ export const ReceiptRefundIcon = {
   }
 }
 
+export const ReceiptTaxIcon = {
+  name: 'ReceiptTaxIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2zM10 8.5a.5.5 0 11-1 0 .5.5 0 011 0zm5 5a.5.5 0 11-1 0 .5.5 0 011 0z"/>
+</svg>
+)    
+  }
+}
+
 export const RefreshIcon = {
   name: 'RefreshIcon',
   functional: true,
@@ -1577,6 +1987,54 @@ export const ReplyIcon = {
   }
 }
 
+export const RewindIcon = {
+  name: 'RewindIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M12.066 11.2a1 1 0 000 1.6l5.334 4A1 1 0 0019 16V8a1 1 0 00-1.6-.8l-5.333 4zM4.066 11.2a1 1 0 000 1.6l5.334 4A1 1 0 0011 16V8a1 1 0 00-1.6-.8l-5.334 4z"/>
+</svg>
+)    
+  }
+}
+
+export const RssIcon = {
+  name: 'RssIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"/>
+</svg>
+)    
+  }
+}
+
+export const SaveAsIcon = {
+  name: 'SaveAsIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M17 16v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-7a2 2 0 012-2h2m3-4H9a2 2 0 00-2 2v7a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-1m-1 4l-3 3m0 0l-3-3m3 3V3"/>
+</svg>
+)    
+  }
+}
+
+export const SaveIcon = {
+  name: 'SaveIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"/>
+</svg>
+)    
+  }
+}
+
 export const ScaleIcon = {
   name: 'ScaleIcon',
   functional: true,
@@ -1584,6 +2042,30 @@ export const ScaleIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+</svg>
+)    
+  }
+}
+
+export const ScissorsIcon = {
+  name: 'ScissorsIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z"/>
+</svg>
+)    
+  }
+}
+
+export const SearchCircleIcon = {
+  name: 'SearchCircleIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
 </svg>
 )    
   }
@@ -1608,6 +2090,18 @@ export const SelectorIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M8 9l4-4 4 4m0 6l-4 4-4-4"/>
+</svg>
+)    
+  }
+}
+
+export const ServerIcon = {
+  name: 'ServerIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
 </svg>
 )    
   }
@@ -1733,6 +2227,30 @@ export const StarIcon = {
   }
 }
 
+export const StatusOfflineIcon = {
+  name: 'StatusOfflineIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3m8.293 8.293l1.414 1.414"/>
+</svg>
+)    
+  }
+}
+
+export const StatusOnlineIcon = {
+  name: 'StatusOnlineIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M5.636 18.364a9 9 0 010-12.728m12.728 0a9 9 0 010 12.728m-9.9-2.829a5 5 0 010-7.07m7.072 0a5 5 0 010 7.07M13 12a1 1 0 11-2 0 1 1 0 012 0z"/>
+</svg>
+)    
+  }
+}
+
 export const StopIcon = {
   name: 'StopIcon',
   functional: true,
@@ -1789,6 +2307,18 @@ export const SwitchVerticalIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/>
+</svg>
+)    
+  }
+}
+
+export const TableIcon = {
+  name: 'TableIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
 </svg>
 )    
   }
@@ -1914,6 +2444,19 @@ export const TrendingUpIcon = {
   }
 }
 
+export const TruckIcon = {
+  name: 'TruckIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path fill="#fff" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/>
+</svg>
+)    
+  }
+}
+
 export const UploadIcon = {
   name: 'UploadIcon',
   functional: true,
@@ -1998,6 +2541,30 @@ export const UsersIcon = {
   }
 }
 
+export const VariableIcon = {
+  name: 'VariableIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M4.871 4A17.926 17.926 0 003 12c0 2.874.673 5.59 1.871 8m14.13 0a17.926 17.926 0 001.87-8c0-2.874-.673-5.59-1.87-8M9 9h1.246a1 1 0 01.961.725l1.586 5.55a1 1 0 00.961.725H15m1-7h-.08a2 2 0 00-1.519.698L9.6 15.302A2 2 0 018.08 16H8"/>
+</svg>
+)    
+  }
+}
+
+export const VideoCameraIcon = {
+  name: 'VideoCameraIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+</svg>
+)    
+  }
+}
+
 export const ViewBoardsIcon = {
   name: 'ViewBoardsIcon',
   functional: true,
@@ -2066,6 +2633,18 @@ export const VolumeUpIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/>
+</svg>
+)    
+  }
+}
+
+export const WifiIcon = {
+  name: 'WifiIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
 </svg>
 )    
   }

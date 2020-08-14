@@ -1,3 +1,15 @@
+export const AcademicCapIcon = {
+  name: 'AcademicCapIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+</svg>
+)    
+  }
+}
+
 export const AdjustmentsIcon = {
   name: 'AdjustmentsIcon',
   functional: true,
@@ -203,6 +215,18 @@ export const AtSymbolIcon = {
   }
 }
 
+export const BackspaceIcon = {
+  name: 'BackspaceIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M6.707 4.879A3 3 0 018.828 4H15a3 3 0 013 3v6a3 3 0 01-3 3H8.828a3 3 0 01-2.12-.879l-4.415-4.414a1 1 0 010-1.414l4.414-4.414zm4 2.414a1 1 0 00-1.414 1.414L10.586 10l-1.293 1.293a1 1 0 101.414 1.414L12 11.414l1.293 1.293a1 1 0 001.414-1.414L13.414 10l1.293-1.293a1 1 0 00-1.414-1.414L12 8.586l-1.293-1.293z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
 export const BadgeCheckIcon = {
   name: 'BadgeCheckIcon',
   functional: true,
@@ -222,6 +246,18 @@ export const BanIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path fill-rule="evenodd" d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const BeakerIcon = {
+  name: 'BeakerIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.027 1.028a4 4 0 00-2.171.102l-.47.156a4 4 0 01-2.53 0l-.563-.187a1.993 1.993 0 00-.114-.035l1.063-1.063A3 3 0 009 8.172z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -283,6 +319,30 @@ export const BriefcaseIcon = {
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"/>
   <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/>
+</svg>
+)    
+  }
+}
+
+export const CakeIcon = {
+  name: 'CakeIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M6 3a1 1 0 011-1h.01a1 1 0 010 2H7a1 1 0 01-1-1zm2 3a1 1 0 00-2 0v1a2 2 0 00-2 2v1a2 2 0 00-2 2v.683a3.7 3.7 0 011.055.485 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0A3.7 3.7 0 0118 12.683V12a2 2 0 00-2-2V9a2 2 0 00-2-2V6a1 1 0 10-2 0v1h-1V6a1 1 0 10-2 0v1H8V6zm10 8.868a3.704 3.704 0 01-4.055-.036 1.704 1.704 0 00-1.89 0 3.704 3.704 0 01-4.11 0 1.704 1.704 0 00-1.89 0A3.704 3.704 0 012 14.868V17a1 1 0 001 1h14a1 1 0 001-1v-2.132zM9 3a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm3 0a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const CalculatorIcon = {
+  name: 'CalculatorIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zm6 7a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-3 3a1 1 0 100 2h.01a1 1 0 100-2H10zm-4 1a1 1 0 011-1h.01a1 1 0 110 2H7a1 1 0 01-1-1zm1-4a1 1 0 100 2h.01a1 1 0 100-2H7zm2 1a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm4-4a1 1 0 100 2h.01a1 1 0 100-2H13zM9 9a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zM7 8a1 1 0 000 2h.01a1 1 0 000-2H7z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -422,6 +482,55 @@ export const CheckIcon = {
   }
 }
 
+export const ChevronDoubleDownIcon = {
+  name: 'ChevronDoubleDownIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M15.707 4.293a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 011.414-1.414L10 8.586l4.293-4.293a1 1 0 011.414 0zm0 6a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L10 14.586l4.293-4.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const ChevronDoubleLeftIcon = {
+  name: 'ChevronDoubleLeftIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const ChevronDoubleRightIcon = {
+  name: 'ChevronDoubleRightIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+  <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const ChevronDoubleUpIcon = {
+  name: 'ChevronDoubleUpIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414 0zm0-6a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
 export const ChevronDownIcon = {
   name: 'ChevronDownIcon',
   functional: true,
@@ -465,6 +574,19 @@ export const ChevronUpIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const ChipIcon = {
+  name: 'ChipIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M13 7H7v6h6V7z"/>
+  <path fill-rule="evenodd" d="M7 2a1 1 0 012 0v1h2V2a1 1 0 112 0v1h2a2 2 0 012 2v2h1a1 1 0 110 2h-1v2h1a1 1 0 110 2h-1v2a2 2 0 01-2 2h-2v1a1 1 0 11-2 0v-1H9v1a1 1 0 11-2 0v-1H5a2 2 0 01-2-2v-2H2a1 1 0 110-2h1V9H2a1 1 0 010-2h1V5a2 2 0 012-2h2V2zM5 5h10v10H5V5z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -540,7 +662,7 @@ export const CloudDownloadIcon = {
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
-  <path d="M6 13a4 4 0 010-8 4 4 0 118 0 4 4 0 010 8h-3V8a1 1 0 10-2 0v5H6zM9 13h2v2.586l1.293-1.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 111.414-1.414L9 15.586V13z"/>
+  <path fill-rule="evenodd" d="M2 9.5A3.5 3.5 0 005.5 13H9v2.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 15.586V13h2.5a4.5 4.5 0 10-.616-8.958 4.002 4.002 0 10-7.753 1.977A3.5 3.5 0 002 9.5zm9 3.5H9V8a1 1 0 012 0v5z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -552,7 +674,20 @@ export const CloudUploadIcon = {
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
-  <path fill-rule="evenodd" d="M2 10a4 4 0 004 4h3v3a1 1 0 102 0v-3h3a4 4 0 000-8 4 4 0 00-8 0 4 4 0 00-4 4zm9 4H9V9.414l-1.293 1.293a1 1 0 01-1.414-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 9.414V14z" clip-rule="evenodd"/>
+  <path d="M5.5 13a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 13H11V9.413l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13H5.5z"/>
+  <path d="M9 13h2v5a1 1 0 11-2 0v-5z"/>
+</svg>
+)    
+  }
+}
+
+export const CloudIcon = {
+  name: 'CloudIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 16h-8z"/>
 </svg>
 )    
   }
@@ -614,6 +749,42 @@ export const CreditCardIcon = {
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"/>
   <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const CubeTransparentIcon = {
+  name: 'CubeTransparentIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M9.504 1.132a1 1 0 01.992 0l1.75 1a1 1 0 11-.992 1.736L10 3.152l-1.254.716a1 1 0 11-.992-1.736l1.75-1zM5.618 4.504a1 1 0 01-.372 1.364L5.016 6l.23.132a1 1 0 11-.992 1.736L4 7.723V8a1 1 0 01-2 0V6a.996.996 0 01.52-.878l1.734-.99a1 1 0 011.364.372zm8.764 0a1 1 0 011.364-.372l1.733.99A1.002 1.002 0 0118 6v2a1 1 0 11-2 0v-.277l-.254.145a1 1 0 11-.992-1.736l.23-.132-.23-.132a1 1 0 01-.372-1.364zm-7 4a1 1 0 011.364-.372L10 8.848l1.254-.716a1 1 0 11.992 1.736L11 10.58V12a1 1 0 11-2 0v-1.42l-1.246-.712a1 1 0 01-.372-1.364zM3 11a1 1 0 011 1v1.42l1.246.712a1 1 0 11-.992 1.736l-1.75-1A1 1 0 012 14v-2a1 1 0 011-1zm14 0a1 1 0 011 1v2a1 1 0 01-.504.868l-1.75 1a1 1 0 11-.992-1.736L16 13.42V12a1 1 0 011-1zm-9.618 5.504a1 1 0 011.364-.372l.254.145V16a1 1 0 112 0v.277l.254-.145a1 1 0 11.992 1.736l-1.735.992a.995.995 0 01-1.022 0l-1.735-.992a1 1 0 01-.372-1.364z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const CubeIcon = {
+  name: 'CubeIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"/>
+</svg>
+)    
+  }
+}
+
+export const CurrencyBangladeshiIcon = {
+  name: 'CurrencyBangladeshiIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 4a1 1 0 000 2 1 1 0 011 1v1H7a1 1 0 000 2h1v3a3 3 0 106 0v-1a1 1 0 10-2 0v1a1 1 0 11-2 0v-3h3a1 1 0 100-2h-3V7a3 3 0 00-3-3z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -692,6 +863,20 @@ export const CursorClickIcon = {
   }
 }
 
+export const DatabaseIcon = {
+  name: 'DatabaseIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M3 12v3c0 1.657 3.134 3 7 3s7-1.343 7-3v-3c0 1.657-3.134 3-7 3s-7-1.343-7-3z"/>
+  <path d="M3 7v3c0 1.657 3.134 3 7 3s7-1.343 7-3V7c0 1.657-3.134 3-7 3S3 8.657 3 7z"/>
+  <path d="M17 5c0 1.657-3.134 3-7 3S3 6.657 3 5s3.134-3 7-3 7 1.343 7 3z"/>
+</svg>
+)    
+  }
+}
+
 export const DesktopComputerIcon = {
   name: 'DesktopComputerIcon',
   functional: true,
@@ -699,6 +884,30 @@ export const DesktopComputerIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const DeviceMobileIcon = {
+  name: 'DeviceMobileIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const DeviceTabletIcon = {
+  name: 'DeviceTabletIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm4 14a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -760,6 +969,31 @@ export const DocumentReportIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm2 10a1 1 0 10-2 0v3a1 1 0 102 0v-3zm2-3a1 1 0 011 1v5a1 1 0 11-2 0v-5a1 1 0 011-1zm4-1a1 1 0 10-2 0v7a1 1 0 102 0V8z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const DocumentSearchIcon = {
+  name: 'DocumentSearchIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2h-1.528A6 6 0 004 9.528V4z"/>
+  <path fill-rule="evenodd" d="M8 10a4 4 0 00-3.446 6.032l-1.261 1.26a1 1 0 101.414 1.415l1.261-1.261A4 4 0 108 10zm-2 4a2 2 0 114 0 2 2 0 01-4 0z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const DocumentTextIcon = {
+  name: 'DocumentTextIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -925,6 +1159,30 @@ export const EyeIcon = {
   }
 }
 
+export const FastForwardIcon = {
+  name: 'FastForwardIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z"/>
+</svg>
+)    
+  }
+}
+
+export const FilmIcon = {
+  name: 'FilmIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm3 2h6v4H7V5zm8 8v2h1v-2h-1zm-2-2H7v4h6v-4zm2 0h1V9h-1v2zm1-4V5h-1v2h1zM5 5v2H4V5h1zm0 4H4v2h1V9zm-1 4h1v2H4v-2z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
 export const FilterIcon = {
   name: 'FilterIcon',
   functional: true,
@@ -932,6 +1190,20 @@ export const FilterIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path fill-rule="evenodd" d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const FingerPrintIcon = {
+  name: 'FingerPrintIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M6.625 2.655A9 9 0 0119 11a1 1 0 11-2 0 7 7 0 00-9.625-6.492 1 1 0 11-.75-1.853zM4.662 4.959A1 1 0 014.75 6.37 6.97 6.97 0 003 11a1 1 0 11-2 0 8.97 8.97 0 012.25-5.953 1 1 0 011.412-.088z" clip-rule="evenodd"/>
+  <path fill-rule="evenodd" d="M5 11a5 5 0 1110 0 1 1 0 11-2 0 3 3 0 10-6 0c0 1.677-.345 3.276-.968 4.729a1 1 0 11-1.838-.789A9.964 9.964 0 005 11zm8.921 2.012a1 1 0 01.831 1.145 19.86 19.86 0 01-.545 2.436 1 1 0 11-1.92-.558c.207-.713.371-1.445.49-2.192a1 1 0 011.144-.83z" clip-rule="evenodd"/>
+  <path fill-rule="evenodd" d="M10 10a1 1 0 011 1c0 2.236-.46 4.368-1.29 6.304a1 1 0 01-1.838-.789A13.952 13.952 0 009 11a1 1 0 011-1z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -995,6 +1267,19 @@ export const FolderDownloadIcon = {
   }
 }
 
+export const FolderOpenIcon = {
+  name: 'FolderOpenIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z" clip-rule="evenodd"/>
+  <path d="M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z"/>
+</svg>
+)    
+  }
+}
+
 export const FolderRemoveIcon = {
   name: 'FolderRemoveIcon',
   functional: true,
@@ -1015,6 +1300,19 @@ export const FolderIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/>
+</svg>
+)    
+  }
+}
+
+export const GiftIcon = {
+  name: 'GiftIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd"/>
+  <path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"/>
 </svg>
 )    
   }
@@ -1087,6 +1385,18 @@ export const HomeIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+</svg>
+)    
+  }
+}
+
+export const IdentificationIcon = {
+  name: 'IdentificationIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M10 2a1 1 0 00-1 1v1a1 1 0 002 0V3a1 1 0 00-1-1zM4 4h3a3 3 0 006 0h3a2 2 0 012 2v9a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm2.5 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm2.45 4a2.5 2.5 0 10-4.9 0h4.9zM12 9a1 1 0 100 2h3a1 1 0 100-2h-3zm-1 4a1 1 0 011-1h2a1 1 0 110 2h-2a1 1 0 01-1-1z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -1225,13 +1535,25 @@ export const LockOpenIcon = {
   }
 }
 
+export const LoginIcon = {
+  name: 'LoginIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
 export const LogoutIcon = {
   name: 'LogoutIcon',
   functional: true,
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
-  <path fill-rule="evenodd" d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z" clip-rule="evenodd"/>
+  <path fill-rule="evenodd" d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -1257,6 +1579,18 @@ export const MailIcon = {
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+</svg>
+)    
+  }
+}
+
+export const MapIcon = {
+  name: 'MapIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -1346,6 +1680,18 @@ export const MinusCircleIcon = {
   }
 }
 
+export const MinusIcon = {
+  name: 'MinusIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
 export const MoonIcon = {
   name: 'MoonIcon',
   functional: true,
@@ -1353,6 +1699,18 @@ export const MoonIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+</svg>
+)    
+  }
+}
+
+export const MusicNoteIcon = {
+  name: 'MusicNoteIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"/>
 </svg>
 )    
   }
@@ -1378,6 +1736,18 @@ export const OfficeBuildingIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const PaperAirplaneIcon = {
+  name: 'PaperAirplaneIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
 </svg>
 )    
   }
@@ -1440,6 +1810,19 @@ export const PhoneIncomingIcon = {
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path d="M14.414 7l3.293-3.293a1 1 0 00-1.414-1.414L13 5.586V4a1 1 0 10-2 0v4.003a.996.996 0 00.617.921A.997.997 0 0012 9h4a1 1 0 100-2h-1.586z"/>
   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+</svg>
+)    
+  }
+}
+
+export const PhoneMissedCallIcon = {
+  name: 'PhoneMissedCallIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+  <path d="M16.707 3.293a1 1 0 010 1.414L15.414 6l1.293 1.293a1 1 0 01-1.414 1.414L14 7.414l-1.293 1.293a1 1 0 11-1.414-1.414L12.586 6l-1.293-1.293a1 1 0 011.414-1.414L14 4.586l1.293-1.293a1 1 0 011.414 0z"/>
 </svg>
 )    
   }
@@ -1512,7 +1895,31 @@ export const PlusIcon = {
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
-  <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"/>
+  <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const PresentationChartBarIcon = {
+  name: 'PresentationChartBarIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11 4a1 1 0 10-2 0v4a1 1 0 102 0V7zm-3 1a1 1 0 10-2 0v3a1 1 0 102 0V8zM8 9a1 1 0 00-2 0v2a1 1 0 102 0V9z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const PresentationChartLineIcon = {
+  name: 'PresentationChartLineIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -1579,6 +1986,18 @@ export const ReceiptRefundIcon = {
   }
 }
 
+export const ReceiptTaxIcon = {
+  name: 'ReceiptTaxIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M5 2a2 2 0 00-2 2v14l3.5-2 3.5 2 3.5-2 3.5 2V4a2 2 0 00-2-2H5zm2.5 3a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm6.207.293a1 1 0 00-1.414 0l-6 6a1 1 0 101.414 1.414l6-6a1 1 0 000-1.414zM12.5 10a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
 export const RefreshIcon = {
   name: 'RefreshIcon',
   functional: true,
@@ -1603,6 +2022,56 @@ export const ReplyIcon = {
   }
 }
 
+export const RewindIcon = {
+  name: 'RewindIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M8.445 14.832A1 1 0 0010 14v-2.798l5.445 3.63A1 1 0 0017 14V6a1 1 0 00-1.555-.832L10 8.798V6a1 1 0 00-1.555-.832l-6 4a1 1 0 000 1.664l6 4z"/>
+</svg>
+)    
+  }
+}
+
+export const RssIcon = {
+  name: 'RssIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z"/>
+  <path d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z"/>
+</svg>
+)    
+  }
+}
+
+export const SaveAsIcon = {
+  name: 'SaveAsIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M9.707 7.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L13 8.586V5h3a2 2 0 012 2v5a2 2 0 01-2 2H8a2 2 0 01-2-2V7a2 2 0 012-2h3v3.586L9.707 7.293zM11 3a1 1 0 112 0v2h-2V3z"/>
+  <path d="M4 9a2 2 0 00-2 2v5a2 2 0 002 2h8a2 2 0 002-2H4V9z"/>
+</svg>
+)    
+  }
+}
+
+export const SaveIcon = {
+  name: 'SaveIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M7.707 10.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V6h5a2 2 0 012 2v7a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h5v5.586l-1.293-1.293zM9 4a1 1 0 012 0v2H9V4z"/>
+</svg>
+)    
+  }
+}
+
 export const ScaleIcon = {
   name: 'ScaleIcon',
   functional: true,
@@ -1610,6 +2079,32 @@ export const ScaleIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1zm-5 8.274l-.818 2.552c.25.112.526.174.818.174.292 0 .569-.062.818-.174L5 10.274zm10 0l-.818 2.552c.25.112.526.174.818.174.292 0 .569-.062.818-.174L15 10.274z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const ScissorsIcon = {
+  name: 'ScissorsIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M5.5 2a3.5 3.5 0 101.665 6.58L8.585 10l-1.42 1.42a3.5 3.5 0 101.414 1.414l8.128-8.127a1 1 0 00-1.414-1.414L10 8.586l-1.42-1.42A3.5 3.5 0 005.5 2zM4 5.5a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm0 9a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" clip-rule="evenodd"/>
+  <path d="M12.828 11.414a1 1 0 00-1.414 1.414l3.879 3.88a1 1 0 001.414-1.415l-3.879-3.879z"/>
+</svg>
+)    
+  }
+}
+
+export const SearchCircleIcon = {
+  name: 'SearchCircleIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M9 9a2 2 0 114 0 2 2 0 01-4 0z"/>
+  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a4 4 0 00-3.446 6.032l-2.261 2.26a1 1 0 101.414 1.415l2.261-2.261A4 4 0 1011 5z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -1634,6 +2129,18 @@ export const SelectorIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const ServerIcon = {
+  name: 'ServerIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm14 1a1 1 0 11-2 0 1 1 0 012 0zM2 13a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2zm14 1a1 1 0 11-2 0 1 1 0 012 0z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -1762,6 +2269,30 @@ export const StarIcon = {
   }
 }
 
+export const StatusOfflineIcon = {
+  name: 'StatusOfflineIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M3.707 2.293a1 1 0 00-1.414 1.414l6.921 6.922c.05.062.105.118.168.167l6.91 6.911a1 1 0 001.415-1.414l-.675-.675a9.001 9.001 0 00-.668-11.982A1 1 0 1014.95 5.05a7.002 7.002 0 01.657 9.143l-1.435-1.435a5.002 5.002 0 00-.636-6.294A1 1 0 0012.12 7.88c.924.923 1.12 2.3.587 3.415l-1.992-1.992a.922.922 0 00-.018-.018l-6.99-6.991zM3.238 8.187a1 1 0 00-1.933-.516c-.8 3-.025 6.336 2.331 8.693a1 1 0 001.414-1.415 6.997 6.997 0 01-1.812-6.762zM7.4 11.5a1 1 0 10-1.73 1c.214.371.48.72.795 1.035a1 1 0 001.414-1.414c-.191-.191-.35-.4-.478-.622z"/>
+</svg>
+)    
+  }
+}
+
+export const StatusOnlineIcon = {
+  name: 'StatusOnlineIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M5.05 3.636a1 1 0 010 1.414 7 7 0 000 9.9 1 1 0 11-1.414 1.414 9 9 0 010-12.728 1 1 0 011.414 0zm9.9 0a1 1 0 011.414 0 9 9 0 010 12.728 1 1 0 11-1.414-1.414 7 7 0 000-9.9 1 1 0 010-1.414zM7.879 6.464a1 1 0 010 1.414 3 3 0 000 4.243 1 1 0 11-1.415 1.414 5 5 0 010-7.07 1 1 0 011.415 0zm4.242 0a1 1 0 011.415 0 5 5 0 010 7.072 1 1 0 01-1.415-1.415 3 3 0 000-4.242 1 1 0 010-1.415zM10 9a1 1 0 011 1v.01a1 1 0 11-2 0V10a1 1 0 011-1z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
 export const StopIcon = {
   name: 'StopIcon',
   functional: true,
@@ -1817,6 +2348,18 @@ export const SwitchVerticalIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path d="M5 12a1 1 0 102 0V6.414l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L5 6.414V12zM15 8a1 1 0 10-2 0v5.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L15 13.586V8z"/>
+</svg>
+)    
+  }
+}
+
+export const TableIcon = {
+  name: 'TableIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -1942,6 +2485,19 @@ export const TrendingUpIcon = {
   }
 }
 
+export const TruckIcon = {
+  name: 'TruckIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+  <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"/>
+</svg>
+)    
+  }
+}
+
 export const UploadIcon = {
   name: 'UploadIcon',
   functional: true,
@@ -2026,6 +2582,30 @@ export const UsersIcon = {
   }
 }
 
+export const VariableIcon = {
+  name: 'VariableIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M4.649 3.084A1 1 0 015.163 4.4 13.95 13.95 0 004 10c0 1.993.416 3.886 1.164 5.6a1 1 0 01-1.832.8A15.95 15.95 0 012 10c0-2.274.475-4.44 1.332-6.4a1 1 0 011.317-.516zM12.96 7a3 3 0 00-2.342 1.126l-.328.41-.111-.279A2 2 0 008.323 7H8a1 1 0 000 2h.323l.532 1.33-1.035 1.295a1 1 0 01-.781.375H7a1 1 0 100 2h.039a3 3 0 002.342-1.126l.328-.41.111.279A2 2 0 0011.677 14H12a1 1 0 100-2h-.323l-.532-1.33 1.035-1.295A1 1 0 0112.961 9H13a1 1 0 100-2h-.039zm1.874-2.6a1 1 0 011.833-.8A15.95 15.95 0 0118 10c0 2.274-.475 4.44-1.332 6.4a1 1 0 11-1.832-.8A13.949 13.949 0 0016 10c0-1.993-.416-3.886-1.165-5.6z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const VideoCameraIcon = {
+  name: 'VideoCameraIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"/>
+</svg>
+)    
+  }
+}
+
 export const ViewBoardsIcon = {
   name: 'ViewBoardsIcon',
   functional: true,
@@ -2093,6 +2673,18 @@ export const VolumeUpIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const WifiIcon = {
+  name: 'WifiIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M17.778 8.222c-4.296-4.296-11.26-4.296-15.556 0A1 1 0 01.808 6.808c5.076-5.077 13.308-5.077 18.384 0a1 1 0 01-1.414 1.414zM14.95 11.05a7 7 0 00-9.9 0 1 1 0 01-1.414-1.414 9 9 0 0112.728 0 1 1 0 01-1.414 1.414zM12.12 13.88a3 3 0 00-4.242 0 1 1 0 01-1.415-1.415 5 5 0 017.072 0 1 1 0 01-1.415 1.415zM9 16a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"/>
 </svg>
 )    
   }

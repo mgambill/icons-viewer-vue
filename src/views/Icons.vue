@@ -50,13 +50,7 @@
         button.btn.px-4.py-2.text-gray-500(type="button" @click="toggleSet"  class="hover:text-indigo-400 focus:outline-none focus:text-indigo-400" title="Toggle between icon sets.")
           SolidSwitchVerticalIcon.w-6.h-6
        
-      h2.mb-2.font-light.text.text-gray-100(class='-tracking-0.5')
-        | MIT-licensed, 
-        a.text-indigo-300(href="https://github.com/refactoringui/heroicons/" target="_blank" rel="noreferrer" class='hover:underline') open source iconset 
-        | by 
-        a.text-indigo-300(href="https://twitter.com/steveschoger" target="_blank" rel="noreferrer" class='hover:underline') Steve Schoger 
-        | and 
-        a.text-indigo-300(href="https://twitter.com/adamwathan" target="_blank" rel="noreferrer" class='hover:underline') Adam Wathan 
+      h2#info.mb-2.font-light.text.text-gray-100(class='-tracking-0.5' v-html="currentSet.info")
     
   .container.mx-auto(class="md:px-3 xl:px-0") 
     
@@ -65,16 +59,15 @@
         .mt-1.flex.rounded-md.shadow-sm
           .relative.flex-grow(class='focus-within:z-10')
             .absolute.inset-y-0.left-0.pl-3.flex.items-center.pointer-events-none
-              svg.h-5.w-5.text-gray-400(fill="none" viewBox="0 0 24 24" stroke="currentColor")              
-                path( stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z")            
+              OutlineSearchIcon.h-5.w-5.text-gray-400(stroke-width="2" )
+              
             label.sr-only(for="filter") Search Icons
             input#filter.form-input.block.w-full.pl-10.transition.ease-in-out.duration-150(:class="[currentSet.variants? 'rounded-none rounded-l-md':'rounded-md']" class='sm:text-sm sm:leading-5' placeholder='Search icons' v-model="filterText")
           template(v-if="currentSet.variants")
             button.-ml-px.w-28.relative.inline-flex.items-center.px-3.py-2.border.border-gray-300.text-sm.leading-5.font-medium.rounded-r-md.text-gray-700.bg-white.transition.ease-in-out.duration-150(class='hover:text-gray-500 hover:bg-white focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700' @click="toggleIconType")
               div.w-full.flex.justify-between
                 span.ml-2 {{ iconType }}
-                svg.w-5.h-5.text-gray-400(fill='none', viewBox='0 0 24 24', stroke='currentColor', strokewidth='1')
-                  path(stroke-linecap='round', stroke-linejoin='round', stroke-width='1', d='M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4')
+                OutlineSwitchVerticalIcon.w-5.h-5.text-gray-400(stroke-width='1')
 
 
       .mt-1.ml-4
@@ -99,7 +92,7 @@
     template(v-if="filteredIcons")
       div(class="flex flex-wrap  -mx-2 mt-2")
         template( v-for="icon in filteredIcons")
-          IconCard(:icon="icon" :key="`${icon.title}--${iconType}`" :type="iconType" :is-dark="isDark" :icon-size="iconSize" :icon-stroke-width="iconStrokeWidth" :copyFormat="copyFormat")
+          IconCard(:icon="icon" :prefix="currentSet.prefix" :key="`${icon.title}--${iconType}`" :type="iconType" :is-dark="isDark" :icon-size="iconSize" :icon-stroke-width="iconStrokeWidth" :copyFormat="copyFormat")
 
     template(v-else)
       div.flex.h-48.items-center.justify-center.mt-4.w-full
@@ -126,7 +119,11 @@ import theme from "tailwindcss/defaultTheme"
 import { default as $state, mapCache, clearState } from "../state"
 import HeroiconNames from "@/icons/heroicons/list.json"
 import ZondiconNames from "@/icons/zondicons/list.json"
-import config from "@/config.json"
+import CodiconNames from "@/icons/codicons/list.json"
+import config_source from "@/config.json"
+import marked from "marked"
+
+const config = config_source.map(c => ({ ...c, info: marked(c.info) }))
 
 export default {
   name: "Home",
@@ -139,7 +136,8 @@ export default {
       open: false,
       filterText: "",
       strokeWidths: [0.5, 1, 1.5, 2],
-      spacing: Object.keys(theme.spacing).filter(key => +key > 3)
+      spacing: Object.keys(theme.spacing).filter(key => +key > 3),
+      sets: [HeroiconNames, ZondiconNames, CodiconNames]
     }
   },
   computed: {
@@ -181,14 +179,15 @@ export default {
       this.iconVariant = this.iconType
     },
     toggleSet() {
-      this.iconSetIndex = this.iconSetIndex === 0 ? 1 : 0
+      if (this.sets.length === this.iconSetIndex + 1) this.iconSetIndex = 0
+      else this.iconSetIndex++
     }
   },
   watch: {
     iconSetIndex: {
       immediate: true,
       handler() {
-        const arr = this.iconSetIndex === 0 ? HeroiconNames : ZondiconNames
+        const arr = this.sets[this.iconSetIndex]
         this.icons = arr.map(x => ({
           icon: x,
           title: kebabCase(x.replace("Icon", ""))
