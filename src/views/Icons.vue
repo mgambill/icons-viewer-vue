@@ -117,6 +117,7 @@ import { default as $state, mapCache, clearState } from "../state"
 import HeroiconNames from "@/icons/heroicons/list.json"
 import ZondiconNames from "@/icons/zondicons/list.json"
 import CodiconNames from "@/icons/codicons/list.json"
+import TeenyiconNames from "@/icons/teenyicons/list.json"
 import config_source from "@/config.json"
 import marked from "marked"
 
@@ -134,7 +135,7 @@ export default {
       filterText: "",
       strokeWidths: [0.5, 1, 1.5, 2],
       spacing: Object.keys(theme.spacing).filter(key => +key > 3),
-      sets: [HeroiconNames, ZondiconNames, CodiconNames]
+      sets: [HeroiconNames, ZondiconNames, CodiconNames, TeenyiconNames]
     }
   },
   computed: {

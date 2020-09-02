@@ -5,6 +5,8 @@ import * as outline from "./icons/heroicons/outline"
 import * as solid from "./icons/heroicons/solid"
 import * as zondicon from "./icons/zondicons"
 import * as codicon from "./icons/codicons"
+import * as teenyicon_outline from "./icons/teenyicons/outline"
+import * as teenyicon_solid from "./icons/teenyicons/solid"
 import VueClipboard from "vue-clipboard2"
 
 Vue.use(VueClipboard)
@@ -21,6 +23,14 @@ Object.values(zondicon).forEach(icon => {
 })
 Object.values(codicon).forEach(icon => {
   Vue.component(`Codicon_${icon.name}`, icon)
+})
+
+Object.values(teenyicon_outline).forEach(icon => {
+  Vue.component(`Teeny_Outline${icon.name}`, icon)
+})
+
+Object.values(teenyicon_solid).forEach(icon => {
+  Vue.component(`Teeny_Solid${icon.name}`, icon)
 })
 
 Vue.config.productionTip = false

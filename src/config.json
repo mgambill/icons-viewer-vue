@@ -25,5 +25,16 @@
     "variants": null,
     "prefix": "Codicon_",
     "info": "Creative Commons-licensed [iconset](https://github.com/microsoft/vscode-codicons/) used in [Visual Studio Code](https://code.visualstudio.com/) from Microsoft."
+  },
+  {
+    "key": "teenyicons",
+    "title": "Teenyicons",
+    "source": "icons/teenyicons",
+    "variants": [
+      "Outline",
+      "Solid"
+    ],
+    "prefix": "Teeny_",
+    "info": "Tiny [minimal 1px icons designed](https://github.com/teenyicons/teenyicons/) to fit in the smallest places."
   }
 ]
