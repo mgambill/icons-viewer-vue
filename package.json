@@ -13,7 +13,7 @@
     "@nmyvision/html2pug": "^2.1.4",
     "core-js": "^3.6.4",
     "lodash.kebabcase": "^4.1.1",
-    "tailwindcss": "^1.6.2",
+    "tailwindcss": "^1.7.6",
     "teenyicons": "^0.3.0",
     "vue": "^2.6.11",
     "vue-clipboard2": "^0.3.1",
