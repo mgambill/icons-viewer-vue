@@ -1215,15 +1215,7 @@ export const FireIcon = {
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
-  <g clip-path="url(#clip0)">
-    <path stroke="#374151" stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M14.243 15.243a6 6 0 01-8.486-8.486C5.757 9 6 11 9 12c0-2 1-8 2.5-9 1 2 1.571 2.586 2.742 3.757A5.981 5.981 0 0116 11a5.982 5.982 0 01-1.757 4.243z"/>
-    <path d="M7.879 15.121a3 3 0 104.242-4.242C11.536 10.293 11.25 10 10.75 9c-.75.5-1.25 3.5-1.25 4.5C7.879 13.5 7 13 7 13c0 .768.293 1.536.879 2.121z"/>
-  </g>
-  <defs>
-    <clipPath id="clip0">
-      <path d="M0 0h20v20H0z"/>
-    </clipPath>
-  </defs>
+  <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -1680,13 +1672,25 @@ export const MinusCircleIcon = {
   }
 }
 
+export const MinusSmIcon = {
+  name: 'MinusSmIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
 export const MinusIcon = {
   name: 'MinusIcon',
   functional: true,
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
-  <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd"/>
+  <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -1884,6 +1888,18 @@ export const PlusCircleIcon = {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"/>
+</svg>
+)    
+  }
+}
+
+export const PlusSmIcon = {
+  name: 'PlusSmIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
+  <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"/>
 </svg>
 )    
   }
@@ -2188,10 +2204,7 @@ export const ShoppingBagIcon = {
   render(h, ctx) {
     return (
       <svg viewBox="0 0 20 20" fill="currentColor" {...ctx.data}>
-  <path stroke="#374151" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M5 8h10l1 9H4l1-9z"/>
-  <path stroke="#374151" stroke-width={ctx.props.strokeWidth || 1} d="M7 6a3 3 0 013-3v0a3 3 0 013 3v3a3 3 0 01-3 3v0a3 3 0 01-3-3V6z"/>
-  <rect width="2" height="2" x="6" y="9" rx="1"/>
-  <rect width="2" height="2" x="12" y="9" rx="1"/>
+  <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"/>
 </svg>
 )    
   }

@@ -32,7 +32,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.1.2",
-    "heroicons": "https://github.com/refactoringui/heroicons.git#master",
+    "heroicons": "^0.4.1",
     "lint-staged": "^9.5.0",
     "lodash.camelcase": "^4.3.0",
     "lodash.startcase": "^4.4.0",

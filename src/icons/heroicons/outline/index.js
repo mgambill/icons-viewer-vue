@@ -1650,13 +1650,25 @@ export const MinusCircleIcon = {
   }
 }
 
+export const MinusSmIcon = {
+  name: 'MinusSmIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M18 12H6"/>
+</svg>
+)    
+  }
+}
+
 export const MinusIcon = {
   name: 'MinusIcon',
   functional: true,
   render(h, ctx) {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M18 12H6"/>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M20 12H4"/>
 </svg>
 )    
   }
@@ -1850,6 +1862,18 @@ export const PlusCircleIcon = {
     return (
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+</svg>
+)    
+  }
+}
+
+export const PlusSmIcon = {
+  name: 'PlusSmIcon',
+  functional: true,
+  render(h, ctx) {
+    return (
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...ctx.data}>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width={ctx.props.strokeWidth || 1} d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
 </svg>
 )    
   }
