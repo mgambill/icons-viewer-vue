@@ -1,4 +1,4 @@
-# Heroicons viewer
+# Icons viewer
 
 ## Overview
 
