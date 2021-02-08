@@ -37,7 +37,7 @@
     "lint-staged": "^9.5.0",
     "lodash.camelcase": "^4.3.0",
     "lodash.startcase": "^4.4.0",
-    "marked": "^1.1.1",
+    "marked": "^2.0.0",
     "mkdirp": "^1.0.3",
     "prettier": "^1.19.1",
     "sass": "^1.25.0",
