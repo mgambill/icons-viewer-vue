@@ -14,15 +14,13 @@ const getComponentName = v => pascalCase(v.replace(/\.[a-z]+$/, "Icon"))
 
 function componentTemplate({ name, content, componentFormatter }) {
   const n = getComponentName(name)
-  const code = `export const ${n} = {
-  name: '${n}',
-  functional: true,
-  render(h, ctx) {
-    return (
-      ${content.replace(/<svg([^>]+)>/, "<svg$1 {...ctx.data}>")})    
-  }
-}
-`
+  const code = `
+    export const ${n} = (props, context) =>
+    (
+      ${content.replace(/<svg([^>]+)>/, "<svg$1 {...context.attrs}>")}
+    )
+    ${n}.props = ['strokeWidth']`
+
   return componentFormatter(name, content, code)
 }
 
@@ -77,8 +75,8 @@ export async function createControls(
     // makde directory
     mkdir.sync(path.join(__dirname, `${folder}`))
 
-    await fs.writeFile(`${folder}/index.js`, component.join("\n"), "utf8")
+    await fs.writeFile(`${folder}/index.jsx`, component.join("\n"), "utf8")
 
-    console.log(`${folder}/index.js`)
+    console.log(`${folder}/index.jsx`)
   })
 }

@@ -1,41 +1,46 @@
-import Vue from "vue"
-import App from "./App.vue"
-import router from "./router"
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './plugins/router'
+import './index.css'
+
+// icons
 import * as outline from "./icons/heroicons/outline"
 import * as solid from "./icons/heroicons/solid"
-import * as zondicon from "./icons/zondicons"
+//import * as zondicon from "./icons/zondicons"
 import * as codicon from "./icons/codicons"
+import * as feather from "./icons/feather"
 import * as teenyicon_outline from "./icons/teenyicons/outline"
 import * as teenyicon_solid from "./icons/teenyicons/solid"
-import VueClipboard from "vue-clipboard2"
 
-Vue.use(VueClipboard)
+
+const app = createApp(App)
+  .use(router)
 
 Object.values(solid).forEach(icon => {
-  Vue.component(`Solid${icon.name}`, icon)
+  app.component(`Solid${icon.name}`, icon)
 })
 Object.values(outline).forEach(icon => {
-  Vue.component(`Outline${icon.name}`, icon)
+  app.component(`Outline${icon.name}`, icon)
 })
-// if we add another icon set we will need to a prefix....
-Object.values(zondicon).forEach(icon => {
-  Vue.component(`Zondicon_${icon.name}`, icon)
-})
+
+// Object.values(zondicon).forEach(icon => {
+//   app.component(`Zondicon_${icon.name}`, icon)
+// })
+
 Object.values(codicon).forEach(icon => {
-  Vue.component(`Codicon_${icon.name}`, icon)
+  app.component(`Codicon_${icon.name}`, icon)
 })
 
 Object.values(teenyicon_outline).forEach(icon => {
-  Vue.component(`Teeny_Outline${icon.name}`, icon)
+  app.component(`Teeny_Outline${icon.name}`, icon)
 })
 
 Object.values(teenyicon_solid).forEach(icon => {
-  Vue.component(`Teeny_Solid${icon.name}`, icon)
+  app.component(`Teeny_Solid${icon.name}`, icon)
 })
 
-Vue.config.productionTip = false
+Object.values(feather).forEach(icon => {
+  app.component(`Feather_${icon.name}`, icon)
+})
 
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount("#app")
+ app.mount('#app')

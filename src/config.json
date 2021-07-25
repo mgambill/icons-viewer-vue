@@ -8,15 +8,8 @@
       "Solid"
     ],
     "prefix": null,
-    "info":"MIT-licensed, [open source iconset](https://github.com/refactoringui/heroicons/) by [Steve Schoger](https://twitter.com/steveschoger) and [Adam Wathan](https://twitter.com/adamwathan)"
-  },
-  {
-    "key": "zondicons",
-    "title": "Zondicons",
-    "source": "icons/zondicons",
-    "variants": null,
-    "prefix": "Zondicon_",
-    "info":"MIT-licensed, [open source iconset](https://www.zondicons.com/) by [Steve Schoger](https://twitter.com/steveschoger)"
+    "info":"MIT-licensed, [open source iconset](https://github.com/refactoringui/heroicons/) by [Steve Schoger](https://twitter.com/steveschoger) and [Adam Wathan](https://twitter.com/adamwathan)",
+    "isStroke": null
   },
   {
     "key": "codicons",
@@ -24,7 +17,17 @@
     "source": "icons/codicons",
     "variants": null,
     "prefix": "Codicon_",
-    "info": "Creative Commons-licensed [iconset](https://github.com/microsoft/vscode-codicons/) used in [Visual Studio Code](https://code.visualstudio.com/) from Microsoft."
+    "info": "Creative Commons-licensed [iconset](https://github.com/microsoft/vscode-codicons/) used in [Visual Studio Code](https://code.visualstudio.com/) from Microsoft.",
+    "isStroke": null
+  },
+  {
+    "key": "feather",
+    "title": "Feather",
+    "source": "icons/feathercons",
+    "variants": null,
+    "prefix": "Feather_",
+    "info": "[Feather](https://feathericons.com/) is a collection of simply beautiful open source icons. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency, and flexibility.",
+    "isStroke": true
   },
   {
     "key": "teenyicons",
@@ -35,6 +38,7 @@
       "Solid"
     ],
     "prefix": "Teeny_",
-    "info": "Tiny [minimal 1px icons designed](https://github.com/teenyicons/teenyicons/) to fit in the smallest places."
+    "info": "Tiny [minimal 1px icons designed](https://github.com/teenyicons/teenyicons/) to fit in the smallest places.",
+    "isStroke": null
   }
 ]

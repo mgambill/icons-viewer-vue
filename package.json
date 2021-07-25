@@ -1,82 +1,37 @@
 {
-  "name": "heroicons-viewer-vue",
-  "version": "0.1.0",
-  "private": true,
+  "name": "icons-viewer-vite",
+  "version": "0.0.0",
   "scripts": {
-    "serve": "vue-cli-service serve --port 8052",
-    "preview": "vue-cli-service serve --mode production",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
     "build:icons": "node build"
   },
   "dependencies": {
     "@nmyvision/html2pug": "^2.1.4",
-    "core-js": "^3.6.4",
-    "lodash.kebabcase": "^4.1.1",
-    "tailwindcss": "^1.7.6",
-    "teenyicons": "^0.3.0",
-    "vue": "^2.6.11",
-    "vue-clipboard2": "^0.3.1",
-    "vue-router": "^3.1.5"
-  },
-  "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.3.0",
-    "@tailwindcss/ui": "^0.5.0",
-    "@vue/cli-plugin-babel": "~4.2.0",
-    "@vue/cli-plugin-eslint": "~4.2.0",
-    "@vue/cli-plugin-router": "~4.2.0",
-    "@vue/cli-service": "~4.2.0",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "autoprefixer": "^9.7.4",
-    "babel-eslint": "^10.0.3",
-    "codicons": "https://github.com/microsoft/vscode-codicons.git#master",
-    "eslint": "^6.7.2",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-vue": "^6.1.2",
-    "heroicons": "^0.4.1",
-    "lint-staged": "^9.5.0",
     "lodash.camelcase": "^4.3.0",
     "lodash.startcase": "^4.4.0",
-    "marked": "^1.1.1",
-    "mkdirp": "^1.0.3",
-    "prettier": "^1.19.1",
-    "sass": "^1.25.0",
-    "sass-loader": "^8.0.2",
-    "vue-cli-plugin-pug": "~1.0.7",
-    "vue-template-compiler": "^2.6.11"
+    "marked": "^2.1.3",
+    "vue": "^3.0.5",
+    "vue-clipboard3": "^1.0.1",
+    "vue-router": "^4.0.10"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended",
-      "@vue/prettier"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {
-      "no-debugger": "warn"
-    }
-  },
-  "browserslist": [
-    "defaults"
-  ],
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,vue}": [
-      "vue-cli-service lint",
-      "yarn build:icons",
-      "git add"
-    ]
-  },
-  "prettier": {
-    "printWidth": 120,
-    "semi": false
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.3.3",
+    "@vitejs/plugin-vue": "^1.2.5",
+    "@vitejs/plugin-vue-jsx": "^1.1.6",
+    "@vscode/codicons": "^0.0.20",
+    "@vue/compiler-sfc": "^3.0.5",
+    "autoprefixer": "^10.3.1",
+    "feather-icons": "^4.28.0",
+    "heroicons": "^1.0.2",
+    "lodash.kebabcase": "^4.1.1",
+    "mkdirp": "^1.0.4",
+    "postcss": "^8.3.6",
+    "prettier": "^2.3.2",
+    "pug": "^3.0.2",
+    "tailwindcss": "^2.2.7",
+    "teenyicons": "^0.4.1",
+    "vite": "^2.4.3"
   }
 }

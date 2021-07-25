@@ -1,13 +1,21 @@
-const defaultTheme = require("tailwindcss/defaultTheme")
+const theme = require("tailwindcss/defaultTheme");
+
+const safelist = []
+Object.keys(theme.spacing).forEach(x => safelist.push(`w-${x}`))
+Object.keys(theme.spacing).forEach(x => safelist.push(`h-${x}`))
 
 module.exports = {
-  purge: false,
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans]
-      }
-    }
+  mode: 'jit',
+  purge: {
+    content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+    safelist
   },
-  plugins: [require("@tailwindcss/ui")]
+  darkMode: 'class', // or 'media' or 'class'
+  theme: {
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [require('@tailwindcss/forms')],
 }

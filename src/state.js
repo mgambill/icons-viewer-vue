@@ -1,12 +1,11 @@
-import Vue from "vue"
+import { reactive } from "vue"
 
 const STORAGE_KEY = "IconState"
 
-const state = Vue.observable({
+const state = reactive({
   iconType: "Hero",
   iconSize: 5,
   iconStrokeWidth: 2,
-  isDark: false,
   copyFormat: "html",
   usePug: false,
   useLocalStorage: true,
@@ -22,7 +21,7 @@ export const clearState = () => {
 console.log(">>", state)
 const saveState = () => {
   if (state.useLocalStorage) {
-    const { iconType, iconSize, iconStrokeWidth, isDark, copyFormat, usePug, iconVariant, iconSetIndex } = state
+    const { iconType, iconSize, iconStrokeWidth, copyFormat, usePug, iconVariant, iconSetIndex } = state
     state.hasState = true
     localStorage.setItem(
       STORAGE_KEY,
@@ -30,7 +29,6 @@ const saveState = () => {
         iconType,
         iconSize,
         iconStrokeWidth,
-        isDark,
         copyFormat,
         usePug,
         iconVariant,
@@ -59,7 +57,7 @@ export const mapCache = (...args) => {
         return state[x]
       },
       set(value) {
-        this.$set(state, x, value)
+        state[x] = value
         // console.log("SET", x, value, state);
         saveState(value)
       }
