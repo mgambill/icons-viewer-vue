@@ -81,21 +81,22 @@
                   | Issues
                   OutlineExternalLinkIcon.w-4.h-4.ml-2
 
-      h1.flex.font-semibold.tracking-tight.text-5xl.text-gray-200.relative
-        span {{ currentSet.title }}
-        .absolute.-ml-12
-          button.btn.px-4.py-2.text-gray-500(
-            type="button",
-            @click="toggleSet",
-            class="hover:text-indigo-400 focus:outline-none focus:text-indigo-400",
-            title="Toggle between icon sets."
-          )
-            SolidSwitchVerticalIcon.w-6.h-6
+      div.space-y-3
+        h1.flex.font-semibold.tracking-tight.text-5xl.text-gray-200.relative
+          span {{ currentSet.title }}
+          .absolute.-ml-12
+            button.btn.px-4.py-2.text-gray-500(
+              type="button",
+              @click="toggleSet",
+              class="hover:text-indigo-400 focus:outline-none focus:text-indigo-400",
+              title="Toggle between icon sets."
+            )
+              SolidSwitchVerticalIcon.w-6.h-6
 
-      h2#info.mb-2.font-light.text.text-gray-100(
-        class="-tracking-0.5",
-        v-html="currentSet.info"
-      )
+        h2#info.mb-2.font-light(
+          class="-tracking-0.5 text-gray-100/75",
+          v-html="currentSet.info"
+        )
 
   .container.mx-auto(class="md:px-3 xl:px-0")
     .flex.w-full.space-x-4
